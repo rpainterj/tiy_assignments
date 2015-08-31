@@ -20,15 +20,58 @@ h1, h2{
  	background-color: #fff;
 
 }
+/*<============= CONTACT PAGE CSS ==============*/
+ 
+  .top .contacttitle{
+ 	text-align: center;
+ 	color:#3B3E45;
 
-a{
-	text-decoration: none;
+
+ }
+
+.contacttext{
+ 	font-family: 'Lato', sans-serif;
+ 	font-weight: 300;
+ 	text-align:center;
 }
 
 input{
-	float:left;
+	font-family: 'Lato', sans-serif;
 	clear:both;
+	width:75%;
+	margin: 10px auto 10px auto;
+	float:none;
+	font-weight: 300;
 }
+
+button{
+	clear:both;
+	width: 75%;
+	margin: 10px auto;
+
+}
+
+form{
+	text-align:center;
+}
+
+.pics{
+	width: 85%;
+	max-width: 434px;
+	margin: 0 auto;
+	background: url("images/typewriter.png") center center no-repeat;
+	height:200px;
+	background-size:  contain;
+
+
+
+}
+
+
+
+
+
+
 
 
 .text>h1{
@@ -199,15 +242,7 @@ input{
 
 
 
-.pics{
-	width: 85%;
-	max-width: 434px;
-	margin: 0 auto;
-	overflow:auto;
-	background-color: #ffffff;
 
-
-}
 
 .leftpic {
 	width: 208px;
@@ -294,6 +329,7 @@ aside{
 	margin: 0 auto 36px auto;
 	overflow: auto;
 	margin-bottom: 30px;
+	display: none;
 	
 	
 }
@@ -364,6 +400,11 @@ aside{
 	
 }
 
+
+a:hover{
+	border: 1px solid red;
+}
+
 .social1{
 	background-color: #3D5C98;
 
@@ -384,6 +425,7 @@ aside{
 	margin: 30px auto 30px auto;
 	max-width: 434px;
 	overflow: auto;
+	display:none;
 	
 }
 /* used the same styling from the 
@@ -540,6 +582,7 @@ article > .line1 {
 		float:right;
 		width: 40.25%;
 		padding-right: 22px;
+		display:block;
 
 	}
 
@@ -548,6 +591,7 @@ article > .line1 {
 		width: 40.25%;
 		margin: 0 auto;
 		padding-right: 22px;
+		display:block;
 	}
 
 	.profilepic{
@@ -564,6 +608,7 @@ article > .line1 {
 		padding-bottom: 18px;
 
 	}
+
 
 	.featarticle1{
 		height: 147px;
@@ -585,6 +630,7 @@ article > .line1 {
 		width: 144px;
 		float:left;
 		margin-left: 5px;
+		margin-bottom: 40px;
 	}
 
 	.featarticle1 > h1 {
@@ -785,6 +831,4 @@ article > .line1 {
 
 
 }
-
-
 

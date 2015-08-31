@@ -23,18 +23,31 @@ h1, h2{
 
 
 
+form{
+	font-family: 'Lato', sans-serif;
+}
+
+
+
 .text>h1{
 	font-size: 48pt;
 	margin-bottom: 0;
 	font-weight: 300;
 	margin-top: 0;
-	text-shadow: 1px 1px 10px #000;
+	text-shadow: 1px 1px 10px rgba(0,0,0,.5);
 
 }
 
 .text > h2{
 	font-weight: 300;
+	text-shadow: 1px 1px 10px rgba(0,0,0,.5);
 }
+
+/*=================================
+============ Header ===============
+===================================*/
+
+
 
  header{
  	background: #fff url("images/hero.jpg") no-repeat center center;
@@ -58,6 +71,10 @@ h1, h2{
  	float:left;
  	width: 45px;
  	height: 45px;
+ }
+
+ .logotop:hover{
+ 	border: 1px solid gold;
  }
 
  ul{
@@ -85,6 +102,10 @@ h1, h2{
 
 
 
+ }
+
+ li:hover{
+ 	color:gold;
  }
 
  .menulist li:nth-child(3){
@@ -319,7 +340,7 @@ aside{
 	color: #3B3E45;
 	text-align: center;
 	font-weight: 300;
-	margin-bottom: 4px;
+	margin-bottom: 40px;
 }
 
 .line2{
@@ -371,6 +392,17 @@ aside{
 
 }
 
+.social1:hover, .social2:hover, .social3:hover {
+	background-color: gold;
+}
+
+
+
+
+
+
+/*============ Bottom Third==============>*/
+
 .featarticles {
 	width: 85%;
 	margin: 30px auto 30px auto;
@@ -384,6 +416,10 @@ below"*/
 
 article > .line1 {
 	margin: 0 0 40px 0;
+}
+
+a{
+	text-decoration: none;
 }
 
 .featarticle1 {
@@ -415,6 +451,9 @@ article > .line1 {
  	padding: 40px 0px 40px 40px;
 }
 
+.featarticle1> h1:hover, .featarticle2> h1:hover, .featarticle3 > h1:hover{
+	color:gold;
+}
  footer{
  	background-color: #373e46;
  	height: 195px;
@@ -436,6 +475,9 @@ article > .line1 {
 	width: 44px;
 	height:44px;
 	margin: 0 auto;
+}
+.logobottom1:hover{
+	border:1px solid gold;
 }
 
 .logobottom2 {
@@ -485,6 +527,10 @@ article > .line1 {
 	
 	header{
 		height: 481px;
+	}
+
+	.line1{
+		margin-bottom:20px;
 	}
 
 	div.logotop{
@@ -727,6 +773,7 @@ article > .line1 {
 		width: 100%;
 		max-width: 294px;
 		margin-left: 0px;
+
 	}
 
 	.featarticle1 > h1 {
@@ -773,10 +820,13 @@ article > .line1 {
 	
 	}
 
+	.social1:hover, .social2:hover, .social3:hover{
+		background-color:gold;
+
+	}
+
 
 
 
 }
-
-
 
