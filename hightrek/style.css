@@ -1,48 +1,3 @@
-/*<============= CONTACT PAGE CSS ==============*/
- 
-  .top .contacttitle{
- 	text-align: center;
- 	color:#3B3E45;
-
-
- }
-
-.contacttext{
- 	font-family: 'Lato', sans-serif;
- 	font-weight: 300;
- 	text-align:center;
-}
-
-input{
-	font-family: 'Lato', sans-serif;
-	clear:both;
-	width:75%;
-	margin: 10px auto 10px auto;
-	float:none;
-	font-weight: 300;
-}
-
-button{
-	clear:both;
-	width: 75%;
-	margin: 10px auto;
-
-}
-
-form{
-	text-align:center;
-}
-
-.pics{
-	width: 85%;
-	max-width: 434px;
-	margin: 0 auto;
-	background: url("../images/typewriter.png") center center no-repeat;
-	height:200px;
-	background-size:  contain;
-
-}
-
 * {
  	box-sizing: border-box;
  	/*border: 1px solid red;*/
@@ -95,7 +50,7 @@ form{
 
 
  header{
- 	background: #fff url("../images/hero.jpg") no-repeat center center;
+ 	background: #fff url("images/hero.jpg") no-repeat center center;
  	padding: 15px;
  	background-size: cover;
  	width: 100%;
@@ -112,7 +67,7 @@ form{
  }
 
  .logotop{
- 	background-image: url("../images/logo.png");
+ 	background-image: url("images/logo.png");
  	float:left;
  	width: 45px;
  	height: 45px;
@@ -154,7 +109,7 @@ form{
  }
 
  .menulist li:nth-child(3){
- 	background-image: url("../images/search.png");
+ 	background-image: url("images/search.png");
  	width: 18px;
  	background-size: cover;
  	margin-left: 20px;
@@ -213,7 +168,7 @@ form{
 .top2{
 	height:32px;
 	width: 32px;
-	background-image: url("../images/profile.jpg");
+	background-image: url("images/profile.jpg");
 	float:left;
 	background-size: contain;
 	border-radius: 50px;
@@ -271,7 +226,7 @@ form{
 	width: 208px;
 	height: 208px;
 	float: left;
-	background: #ffffff url("../images/trail.jpg");
+	background: #ffffff url("images/trail.jpg");
 	background-size: cover;
 	margin-right: 5px;
 	
@@ -283,7 +238,7 @@ form{
 	width: 208px;
 	height:208px;
 	float:left;
-	background: #ffffff url("../images/fisherman.jpg");
+	background: #ffffff url("images/fisherman.jpg");
 	background-size: cover;
 	
 	
@@ -371,7 +326,7 @@ aside{
 }
 
 .profilepic{
-	background-image: url("../images/profile.jpg");
+	background-image: url("images/profile.jpg");
 	border-radius: 100px;
 	height: 150px;
 	width: 150px;
@@ -468,7 +423,7 @@ a{
 }
 
 .featarticle1 {
-	background: #fff url("../images/bluberries.jpg");
+	background: #fff url("images/bluberries.jpg");
 	height: 218px;
 	width: 100%;
 	margin-bottom: 7.5%;
@@ -476,14 +431,14 @@ a{
 }
 
 .featarticle2 {
-	background: #fff url("../images/san_francisco.jpg");
+	background: #fff url("images/san_francisco.jpg");
 	height: 218px;
 	width: 100%;
 	margin-bottom: 7.5%;
 }
 
 .featarticle3 {
-	background: #fff url("../images/woods.jpg");
+	background: #fff url("images/woods.jpg");
 	height: 218px;
 	width: 100%;
 	
@@ -499,13 +454,6 @@ a{
 .featarticle1> h1:hover, .featarticle2> h1:hover, .featarticle3 > h1:hover{
 	color:gold;
 }
-
-
-
-
-/*============ Footer ==============*/
-
-
  footer{
  	background-color: #373e46;
  	height: 195px;
@@ -522,7 +470,7 @@ a{
 }
 
 .logobottom1{
-	background-image: url("../images/logo.png");
+	background-image: url("images/logo.png");
 	background-size: contain;
 	width: 44px;
 	height:44px;
@@ -731,7 +679,7 @@ a{
 	}
 
 	.logobottom1{
-		background-image: url("../images/logo.png");
+		background-image: url("images/logo.png");
 		background-size: contain;
 		width: 44px;
 		height:44px;
@@ -799,10 +747,6 @@ a{
 
 	.text > h1{
 		margin-top: 0px;
-	}
-
-	.featarticles{
-		margin-bottom:40px;
 	}
 
 	.featarticle1{
