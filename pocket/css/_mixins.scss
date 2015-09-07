@@ -1,0 +1,209 @@
+/* Grid System */
+
+$default-width: 100%;
+$default-column-num: 12;
+$gutter-width: 1.9%;
+$single-column-width: ($default-width - (($default-column-num) + 1) * $gutter-width)/ $default-column-num;
+
+
+@mixin grid($column-num) {
+  width: ($single-column-width*$column-num) + (($column-num) - 1)*$gutter-width;
+  float:left;
+  margin-left: $gutter-width;
+  box-sizing:border-box;
+
+
+  &:nth-child(odd){
+  	float:right;
+  	margin-right: $gutter-width;
+  	clear:none;
+  }
+
+}
+/*use this to target margins */
+ 
+@mixin grid_lg($column-num) {
+  width: ($single-column-width*$column-num) + (($column-num) - 1)*$gutter-width;
+  float:left;
+  
+  box-sizing:border-box;
+  margin-right: $gutter-width;
+  margin-left:0;
+
+
+  &:nth-child(3n+1){
+  	margin-right: 0;
+  	clear: none;
+
+  }
+
+  &:nth-child(odd){
+  	float:left;
+  	margin-right: $gutter-width;
+  	
+
+  }
+
+}
+
+
+
+
+/* Text Styles */
+
+@mixin header_text_style{
+	font-size: 1em;
+	color: $primary_text_color;
+	padding-top: 16px;
+	font-weight:bold;
+	display: block;
+	margin-left: 12px;
+	margin-top: 16px;
+	padding-top: 0px;
+	font-family: $default_font;
+
+	&:hover{
+		color: $primary_hover_color;
+	}
+}
+
+/* Section Style */
+
+@mixin sections_sm{
+		height: 108px;
+		border-top: 2px solid $border_color;
+		position: relative;
+		background-color: $primary_background_color;
+
+
+		.article_title{
+			font-size: 1em;
+			color: $primary_text_color;
+			padding-top: 22px;
+			padding-left: 20px;
+			padding-right: 80px;
+			float:left;
+			font-weight: 700;
+			display: block;
+			font-family: $default_font;
+
+			&:hover{
+			color: $primary_hover_color;
+			}
+		}
+
+		.section_image {
+			background-image: url("../images/love_bug.jpg");
+			background-size: cover;
+			background-position: 50%;
+			right: 0;
+			position: absolute;
+			height: 100%;
+			width: 80px;
+			float:right;
+			font-family: $default_font;
+
+			p{
+				display:none;
+			}
+		
+		}
+
+		.alaska_text{
+			display:none;
+		}
+
+		div{
+			img{
+				display:none;
+			}
+
+			.source_site{
+				clear: left;
+				margin-left: 20px;
+				color: $secondary_text_color;
+				display:block;
+				font-size: .7em;
+				padding-top: 6px;
+				font-family: $default_font;
+
+				&:hover{
+					color: $primary_hover_color;
+				}
+			}
+		}
+}
+
+@mixin sections_md{
+		border-top: 2px solid $border_color;
+		position: relative;
+		overflow: hidden;
+		height: 280px;
+		margin-bottom: $gutter-width;
+
+		.article_title{
+			font-size: 1.2em;
+			color: $primary_text_color;
+			padding: 14px;
+			font-weight:700;
+			display: block;
+		}
+
+		.section_image{
+			background-image: url("../images/love_bug.jpg");
+			background-size: cover;
+			position: relative;
+			width: 100%;
+			clear:left;
+
+			p{
+				display:block;
+				font-size: .9em;
+				color: #fff;
+				text-align: center;
+				margin-top: 4px;
+			}
+		
+		}
+
+		.alaska_text{
+			display:block;
+			padding: 10px;
+			font-size: .8em;
+			color: $primary_text_color;
+			clear: left;
+			line-height: 1.5em;
+		}
+
+		div{
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 35px;
+			width: 100%;
+			background-color: #fff;
+
+			img{
+				display:inline-block;
+				margin-top: 8px;
+				float:left;
+				padding-left: 10px;
+			}
+
+			.source_site{
+			margin-left: 20px;
+			color: $secondary_text_color;
+			display: inline-block;
+			font-size: .7em;
+			padding-top: 10px;
+			vertical-align: middle;
+			margin-left: 8px;
+
+		
+			}
+		}
+	}
+
+
+
+

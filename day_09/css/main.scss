@@ -1,0 +1,63 @@
+@import 'variables', 'mixins';
+
+.outmost_wrapper{
+	width: 100%;
+	overflow:auto;
+
+	
+
+}
+
+body {
+	width: 100%;
+	overflow: auto;
+}
+
+
+/* Header */
+
+.color_band{
+	width:100%;
+	overflow:auto;
+
+	div:nth-child(1){
+		background-color: $border_green;
+		width: 25%;
+		float: left;
+		height: 2px;
+
+	}
+
+	div:nth-child(2){
+		@extend div:nth-child(1);
+		bacgkround-color: $border_green_2;
+	}
+
+	div:nth-child(3){
+		@extend div:nth-child(1);
+		bacgkround-color: $border_red;
+	}
+
+	div:nth-child(4){
+		@extend div:nth-child(1);
+		bacgkround-color: $border_yellow;
+	}
+
+
+
+
+
+
+
+
+}
+header{
+	width: 100%;
+	height: 50px;
+	overflow: auto;
+	background-color: $secondary_background_color;
+
+
+
+
+}

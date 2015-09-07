@@ -1,0 +1,776 @@
+/* Colors */
+/* Fonts */
+/* Grid System */
+/*use this to target margins */
+/* Text Styles */
+/* Section Style */
+* {
+  box-sizing: border-box;
+  text-decoration: none; }
+
+body {
+  width: 100%;
+  overflow: auto;
+  font-size: 1em;
+  background-color: #f6f7fa; }
+
+.outmost_wrapper {
+  width: 100%;
+  overflow: auto; }
+
+.body_wrapper {
+  width: 100%;
+  overflow: auto; }
+
+main {
+  padding-bottom: 40px; }
+
+/* Header */
+.color_band {
+  width: 100%;
+  overflow: auto; }
+  .color_band div:nth-child(1), .color_band div:nth-child(2), .color_band div:nth-child(3), .color_band div:nth-child(4) {
+    background-color: #b4dbbf;
+    width: 25%;
+    float: left;
+    height: 2px; }
+  .color_band div:nth-child(2) {
+    background-color: #86c4c1; }
+  .color_band div:nth-child(3) {
+    background-color: #d35a6a; }
+  .color_band div:nth-child(4) {
+    background-color: #ecbe69; }
+
+header {
+  width: 100%;
+  height: 50px;
+  overflow: auto;
+  background-color: #f6f7fa; }
+  header #hamburger_icon img {
+    margin-top: 14px;
+    margin-left: 20px;
+    float: left; }
+  header #pocket_logo, header #home_link, header #recommended_link, header #TIY,
+  header #mail_icon, header #plus_icon, header #upgrade {
+    display: none; }
+  header #my_list_link {
+    color: #313131;
+    padding-top: 0;
+    display: block;
+    float: left;
+    margin-top: 16px;
+    font-size: 1em;
+    margin-left: 12px;
+    font-weight: 700; }
+    header #my_list_link:hover {
+      color: #56beb7; }
+  header #search_icon img {
+    float: right;
+    margin-top: 15px;
+    margin-right: 16px; }
+  header #plus_icon_2 img {
+    float: right;
+    margin-top: 14px;
+    margin-right: 30px; }
+
+/* Header Media Queries */
+@media screen and (min-width: 672px) {
+  header {
+    border-bottom: 2px solid #edeef0; }
+    header #home_link {
+      float: left;
+      font-size: 1em;
+      color: #313131;
+      padding-top: 16px;
+      font-weight: bold;
+      display: block;
+      margin-left: 12px;
+      margin-top: 16px;
+      padding-top: 0px;
+      font-family: "Lato", sans-serif;
+      margin-left: 30px;
+      padding-bottom: 9px;
+      border-bottom: 2px solid #56beb7;
+      color: #56beb7; }
+      header #home_link:hover {
+        color: #56beb7; }
+    header #recommended_link {
+      float: left;
+      font-size: 1em;
+      color: #313131;
+      padding-top: 16px;
+      font-weight: bold;
+      display: block;
+      margin-left: 12px;
+      margin-top: 16px;
+      padding-top: 0px;
+      font-family: "Lato", sans-serif;
+      margin-left: 55px; }
+      header #recommended_link:hover {
+        color: #56beb7; }
+    header #my_list_link {
+      display: none; }
+    header #upgrade {
+      float: right;
+      font-size: 1em;
+      color: #313131;
+      padding-top: 16px;
+      font-weight: bold;
+      display: block;
+      margin-left: 12px;
+      margin-top: 16px;
+      padding-top: 0px;
+      font-family: "Lato", sans-serif;
+      font-weight: normal;
+      padding: 16px 10px 14px 16px;
+      margin-top: 0px;
+      margin-left: 0px;
+      border-left: 1px solid #edeef0; }
+      header #upgrade:hover {
+        color: #56beb7; }
+    header #TIY {
+      float: right;
+      font-size: 1em;
+      color: #313131;
+      padding-top: 16px;
+      font-weight: bold;
+      display: block;
+      margin-left: 12px;
+      margin-top: 16px;
+      padding-top: 0px;
+      font-family: "Lato", sans-serif;
+      font-weight: normal; }
+      header #TIY:hover {
+        color: #56beb7; }
+      header #TIY img {
+        display: block;
+        float: right;
+        margin-right: 24px;
+        margin-top: 7px;
+        margin-left: 3px; }
+    header #mail_icon {
+      display: block;
+      float: right; }
+      header #mail_icon img {
+        margin-top: 18px;
+        margin-right: 10px; }
+    header #plus_icon_2 {
+      display: none; }
+    header #plus_icon {
+      display: block;
+      float: right; }
+      header #plus_icon img {
+        margin-top: 15px;
+        margin-right: 18px;
+        margin-left: 6px; }
+    header #search_icon img {
+      display: block;
+      float: right; } }
+@media screen and (min-width: 1281px) {
+  header {
+    position: fixed;
+    z-index: 10;
+    border-bottom: 2px solid #edeef0; }
+    header #hamburger_icon {
+      display: none; }
+      header #hamburger_icon img {
+        display: none; }
+    header #pocket_logo {
+      display: block;
+      float: left; }
+      header #pocket_logo img {
+        float: left;
+        margin-left: 40px;
+        margin-top: 13px; }
+    header #upgrade {
+      padding-right: 38px; }
+    header #home_link {
+      margin-left: 60px; } }
+/* Sidebar */
+.sidebar {
+  display: none; }
+
+@media screen and (min-width: 1281px) {
+  .sidebar {
+    display: block;
+    float: left;
+    position: fixed;
+    width: 180px;
+    padding-top: 50px;
+    background-color: #f6f7fa; }
+
+  .top_nav_list {
+    font-size: .9em;
+    color: #313131;
+    font-weight: 700;
+    display: block;
+    margin-left: 40px;
+    margin-top: 37px;
+    padding-top: 0px;
+    list-style-type: none;
+    padding-left: 0px;
+    text-decoration: none;
+    padding-bottom: 212px;
+    color: #313131; }
+    .top_nav_list a li {
+      margin-bottom: 15px;
+      margin-right: 0px; }
+    .top_nav_list a:link {
+      color: #313131; }
+    .top_nav_list a:hover {
+      color: #56beb7; }
+    .top_nav_list a:visited {
+      color: #313131; }
+    .top_nav_list li .top_nav_list_separator {
+      height: 1px;
+      width: 20px;
+      background-color: #dbdce1;
+      margin-bottom: 20px; }
+    .top_nav_list li:hover {
+      color: #56beb7; }
+
+  .app_nav a {
+    font-size: .8em;
+    margin-left: 40px;
+    color: #9c9c9c;
+    display: block; }
+    .app_nav a #google_play, .app_nav a #app_store {
+      background: url("../images/google_play.png") center center no-repeat;
+      width: 110px;
+      height: 34px;
+      border: 1px solid #dbdce1;
+      border-radius: 4px;
+      margin-left: -10px;
+      margin-top: 10px; }
+    .app_nav a #app_store {
+      background-image: url("../images/app_store.png");
+      background-size: 80%; }
+
+  .bottom_nav_list {
+    font-size: .9em;
+    color: #313131;
+    font-weight: 700;
+    display: block;
+    margin-left: 40px;
+    margin-top: 37px;
+    padding-top: 0px;
+    list-style-type: none;
+    padding-left: 0px;
+    text-decoration: none; }
+    .bottom_nav_list a li {
+      margin-bottom: 15px;
+      margin-right: 0px; } }
+/* Main Content */
+main .section_header {
+  display: none; }
+main #section_1, main #section_2, main #section_3, main #section_4, main #section_5, main #section_6, main #section_7 {
+  height: 108px;
+  border-top: 2px solid #edeef0;
+  position: relative;
+  background-color: #fff; }
+  main #section_1 .article_title, main #section_2 .article_title, main #section_3 .article_title, main #section_4 .article_title, main #section_5 .article_title, main #section_6 .article_title, main #section_7 .article_title {
+    font-size: 1em;
+    color: #313131;
+    padding-top: 22px;
+    padding-left: 20px;
+    padding-right: 80px;
+    float: left;
+    font-weight: 700;
+    display: block;
+    font-family: "Lato", sans-serif; }
+    main #section_1 .article_title:hover, main #section_2 .article_title:hover, main #section_3 .article_title:hover, main #section_4 .article_title:hover, main #section_5 .article_title:hover, main #section_6 .article_title:hover, main #section_7 .article_title:hover {
+      color: #56beb7; }
+  main #section_1 .section_image, main #section_2 .section_image, main #section_3 .section_image, main #section_4 .section_image, main #section_5 .section_image, main #section_6 .section_image, main #section_7 .section_image {
+    background-image: url("../images/love_bug.jpg");
+    background-size: cover;
+    background-position: 50%;
+    right: 0;
+    position: absolute;
+    height: 100%;
+    width: 80px;
+    float: right;
+    font-family: "Lato", sans-serif; }
+    main #section_1 .section_image p, main #section_2 .section_image p, main #section_3 .section_image p, main #section_4 .section_image p, main #section_5 .section_image p, main #section_6 .section_image p, main #section_7 .section_image p {
+      display: none; }
+  main #section_1 .alaska_text, main #section_2 .alaska_text, main #section_3 .alaska_text, main #section_4 .alaska_text, main #section_5 .alaska_text, main #section_6 .alaska_text, main #section_7 .alaska_text {
+    display: none; }
+  main #section_1 div img, main #section_2 div img, main #section_3 div img, main #section_4 div img, main #section_5 div img, main #section_6 div img, main #section_7 div img {
+    display: none; }
+  main #section_1 div .source_site, main #section_2 div .source_site, main #section_3 div .source_site, main #section_4 div .source_site, main #section_5 div .source_site, main #section_6 div .source_site, main #section_7 div .source_site {
+    clear: left;
+    margin-left: 20px;
+    color: #9c9c9c;
+    display: block;
+    font-size: .7em;
+    padding-top: 6px;
+    font-family: "Lato", sans-serif; }
+    main #section_1 div .source_site:hover, main #section_2 div .source_site:hover, main #section_3 div .source_site:hover, main #section_4 div .source_site:hover, main #section_5 div .source_site:hover, main #section_6 div .source_site:hover, main #section_7 div .source_site:hover {
+      color: #56beb7; }
+main #section_2 .section_image {
+  background-image: url("../images/grey.png"); }
+main #section_3 .section_image {
+  background-image: url("../images/cartoon.jpeg"); }
+main #section_4 .section_image {
+  background-image: url("../images/instagram.jpg"); }
+main #section_5 .section_image {
+  background-image: url("../images/google.jpg"); }
+main #section_6 .section_image {
+  background-image: url("../images/jcrew.jpg"); }
+main #section_7 .section_image {
+  background-image: url("../images/tumblr.jpg"); }
+
+@media screen and (min-width: 672px) {
+  main {
+    width: 100%;
+    background-color: #f6f7fa;
+    overflow: hidden; }
+    main .section_header {
+      display: block;
+      font-size: 1em;
+      margin-left: 18px;
+      float: left;
+      width: 100%;
+      margin-top: 30px;
+      margin-bottom: 19px; }
+      main .section_header h1 {
+        display: inline;
+        font-family: "Lato", sans-serif;
+        font-weight: 400; }
+      main .section_header #pencil {
+        overflow: auto;
+        float: right;
+        background-image: url("../images/pencil_icon.png");
+        height: 20px;
+        width: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin-right: 32px;
+        margin-top: 15px; }
+      main .section_header #mini_menu {
+        overflow: auto;
+        float: right;
+        background-image: url("../images/list_icon.png");
+        height: 20px;
+        width: 20px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        margin-right: 20px;
+        margin-top: 17px; }
+    main .col_6_md {
+      width: 47.15%;
+      float: left;
+      margin-left: 1.9%;
+      box-sizing: border-box; }
+      main .col_6_md:nth-child(odd) {
+        float: right;
+        margin-right: 1.9%;
+        clear: none; }
+    main #section_1, main #section_2, main #section_3, main #section_4, main #section_5, main #section_6, main #section_7 {
+      border-top: 2px solid #edeef0;
+      position: relative;
+      overflow: hidden;
+      height: 280px;
+      margin-bottom: 1.9%; }
+      main #section_1 .article_title, main #section_2 .article_title, main #section_3 .article_title, main #section_4 .article_title, main #section_5 .article_title, main #section_6 .article_title, main #section_7 .article_title {
+        font-size: 1.2em;
+        color: #313131;
+        padding: 14px;
+        font-weight: 700;
+        display: block; }
+      main #section_1 .section_image, main #section_2 .section_image, main #section_3 .section_image, main #section_4 .section_image, main #section_5 .section_image, main #section_6 .section_image, main #section_7 .section_image {
+        background-image: url("../images/love_bug.jpg");
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        clear: left; }
+        main #section_1 .section_image p, main #section_2 .section_image p, main #section_3 .section_image p, main #section_4 .section_image p, main #section_5 .section_image p, main #section_6 .section_image p, main #section_7 .section_image p {
+          display: block;
+          font-size: .9em;
+          color: #fff;
+          text-align: center;
+          margin-top: 4px; }
+      main #section_1 .alaska_text, main #section_2 .alaska_text, main #section_3 .alaska_text, main #section_4 .alaska_text, main #section_5 .alaska_text, main #section_6 .alaska_text, main #section_7 .alaska_text {
+        display: block;
+        padding: 10px;
+        font-size: .8em;
+        color: #313131;
+        clear: left;
+        line-height: 1.5em; }
+      main #section_1 div, main #section_2 div, main #section_3 div, main #section_4 div, main #section_5 div, main #section_6 div, main #section_7 div {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 35px;
+        width: 100%;
+        background-color: #fff; }
+        main #section_1 div img, main #section_2 div img, main #section_3 div img, main #section_4 div img, main #section_5 div img, main #section_6 div img, main #section_7 div img {
+          display: inline-block;
+          margin-top: 8px;
+          float: left;
+          padding-left: 10px; }
+        main #section_1 div .source_site, main #section_2 div .source_site, main #section_3 div .source_site, main #section_4 div .source_site, main #section_5 div .source_site, main #section_6 div .source_site, main #section_7 div .source_site {
+          margin-left: 20px;
+          color: #9c9c9c;
+          display: inline-block;
+          font-size: .7em;
+          padding-top: 10px;
+          vertical-align: middle;
+          margin-left: 8px; }
+    main #section_2 {
+      border-top: 2px solid #edeef0;
+      position: relative;
+      overflow: hidden;
+      height: 280px;
+      margin-bottom: 1.9%; }
+      main #section_2 .article_title {
+        font-size: 1.2em;
+        color: #313131;
+        padding: 14px;
+        font-weight: 700;
+        display: block; }
+      main #section_2 .section_image {
+        background-image: url("../images/love_bug.jpg");
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        clear: left; }
+        main #section_2 .section_image p {
+          display: block;
+          font-size: .9em;
+          color: #fff;
+          text-align: center;
+          margin-top: 4px; }
+      main #section_2 .alaska_text {
+        display: block;
+        padding: 10px;
+        font-size: .8em;
+        color: #313131;
+        clear: left;
+        line-height: 1.5em; }
+      main #section_2 div {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 35px;
+        width: 100%;
+        background-color: #fff; }
+        main #section_2 div img {
+          display: inline-block;
+          margin-top: 8px;
+          float: left;
+          padding-left: 10px; }
+        main #section_2 div .source_site {
+          margin-left: 20px;
+          color: #9c9c9c;
+          display: inline-block;
+          font-size: .7em;
+          padding-top: 10px;
+          vertical-align: middle;
+          margin-left: 8px; }
+      main #section_2 .section_image {
+        background-image: none;
+        background-color: #63c3bd;
+        height: 25px;
+        width: 84px;
+        border-radius: 0 4px 4px 0;
+        float: left; }
+    main #section_3 {
+      border-top: 2px solid #edeef0;
+      position: relative;
+      overflow: hidden;
+      height: 280px;
+      margin-bottom: 1.9%; }
+      main #section_3 .article_title {
+        font-size: 1.2em;
+        color: #313131;
+        padding: 14px;
+        font-weight: 700;
+        display: block; }
+      main #section_3 .section_image {
+        background-image: url("../images/love_bug.jpg");
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        clear: left; }
+        main #section_3 .section_image p {
+          display: block;
+          font-size: .9em;
+          color: #fff;
+          text-align: center;
+          margin-top: 4px; }
+      main #section_3 .alaska_text {
+        display: block;
+        padding: 10px;
+        font-size: .8em;
+        color: #313131;
+        clear: left;
+        line-height: 1.5em; }
+      main #section_3 div {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 35px;
+        width: 100%;
+        background-color: #fff; }
+        main #section_3 div img {
+          display: inline-block;
+          margin-top: 8px;
+          float: left;
+          padding-left: 10px; }
+        main #section_3 div .source_site {
+          margin-left: 20px;
+          color: #9c9c9c;
+          display: inline-block;
+          font-size: .7em;
+          padding-top: 10px;
+          vertical-align: middle;
+          margin-left: 8px; }
+      main #section_3 .section_image {
+        background-image: url("../images/cartoon.jpeg"); }
+    main #section_4 {
+      border-top: 2px solid #edeef0;
+      position: relative;
+      overflow: hidden;
+      height: 280px;
+      margin-bottom: 1.9%; }
+      main #section_4 .article_title {
+        font-size: 1.2em;
+        color: #313131;
+        padding: 14px;
+        font-weight: 700;
+        display: block; }
+      main #section_4 .section_image {
+        background-image: url("../images/love_bug.jpg");
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        clear: left; }
+        main #section_4 .section_image p {
+          display: block;
+          font-size: .9em;
+          color: #fff;
+          text-align: center;
+          margin-top: 4px; }
+      main #section_4 .alaska_text {
+        display: block;
+        padding: 10px;
+        font-size: .8em;
+        color: #313131;
+        clear: left;
+        line-height: 1.5em; }
+      main #section_4 div {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 35px;
+        width: 100%;
+        background-color: #fff; }
+        main #section_4 div img {
+          display: inline-block;
+          margin-top: 8px;
+          float: left;
+          padding-left: 10px; }
+        main #section_4 div .source_site {
+          margin-left: 20px;
+          color: #9c9c9c;
+          display: inline-block;
+          font-size: .7em;
+          padding-top: 10px;
+          vertical-align: middle;
+          margin-left: 8px; }
+      main #section_4 .section_image {
+        background-image: url("../images/instagram.jpg"); }
+    main #section_5 {
+      border-top: 2px solid #edeef0;
+      position: relative;
+      overflow: hidden;
+      height: 280px;
+      margin-bottom: 1.9%; }
+      main #section_5 .article_title {
+        font-size: 1.2em;
+        color: #313131;
+        padding: 14px;
+        font-weight: 700;
+        display: block; }
+      main #section_5 .section_image {
+        background-image: url("../images/love_bug.jpg");
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        clear: left; }
+        main #section_5 .section_image p {
+          display: block;
+          font-size: .9em;
+          color: #fff;
+          text-align: center;
+          margin-top: 4px; }
+      main #section_5 .alaska_text {
+        display: block;
+        padding: 10px;
+        font-size: .8em;
+        color: #313131;
+        clear: left;
+        line-height: 1.5em; }
+      main #section_5 div {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 35px;
+        width: 100%;
+        background-color: #fff; }
+        main #section_5 div img {
+          display: inline-block;
+          margin-top: 8px;
+          float: left;
+          padding-left: 10px; }
+        main #section_5 div .source_site {
+          margin-left: 20px;
+          color: #9c9c9c;
+          display: inline-block;
+          font-size: .7em;
+          padding-top: 10px;
+          vertical-align: middle;
+          margin-left: 8px; }
+      main #section_5 .section_image {
+        background-image: url("../images/google.jpg"); }
+    main #section_6 {
+      border-top: 2px solid #edeef0;
+      position: relative;
+      overflow: hidden;
+      height: 280px;
+      margin-bottom: 1.9%; }
+      main #section_6 .article_title {
+        font-size: 1.2em;
+        color: #313131;
+        padding: 14px;
+        font-weight: 700;
+        display: block; }
+      main #section_6 .section_image {
+        background-image: url("../images/love_bug.jpg");
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        clear: left; }
+        main #section_6 .section_image p {
+          display: block;
+          font-size: .9em;
+          color: #fff;
+          text-align: center;
+          margin-top: 4px; }
+      main #section_6 .alaska_text {
+        display: block;
+        padding: 10px;
+        font-size: .8em;
+        color: #313131;
+        clear: left;
+        line-height: 1.5em; }
+      main #section_6 div {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 35px;
+        width: 100%;
+        background-color: #fff; }
+        main #section_6 div img {
+          display: inline-block;
+          margin-top: 8px;
+          float: left;
+          padding-left: 10px; }
+        main #section_6 div .source_site {
+          margin-left: 20px;
+          color: #9c9c9c;
+          display: inline-block;
+          font-size: .7em;
+          padding-top: 10px;
+          vertical-align: middle;
+          margin-left: 8px; }
+      main #section_6 .section_image {
+        background-image: url("../images/jcrew.jpg"); }
+    main #section_7 {
+      border-top: 2px solid #edeef0;
+      position: relative;
+      overflow: hidden;
+      height: 280px;
+      margin-bottom: 1.9%; }
+      main #section_7 .article_title {
+        font-size: 1.2em;
+        color: #313131;
+        padding: 14px;
+        font-weight: 700;
+        display: block; }
+      main #section_7 .section_image {
+        background-image: url("../images/love_bug.jpg");
+        background-size: cover;
+        position: relative;
+        width: 100%;
+        clear: left; }
+        main #section_7 .section_image p {
+          display: block;
+          font-size: .9em;
+          color: #fff;
+          text-align: center;
+          margin-top: 4px; }
+      main #section_7 .alaska_text {
+        display: block;
+        padding: 10px;
+        font-size: .8em;
+        color: #313131;
+        clear: left;
+        line-height: 1.5em; }
+      main #section_7 div {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 35px;
+        width: 100%;
+        background-color: #fff; }
+        main #section_7 div img {
+          display: inline-block;
+          margin-top: 8px;
+          float: left;
+          padding-left: 10px; }
+        main #section_7 div .source_site {
+          margin-left: 20px;
+          color: #9c9c9c;
+          display: inline-block;
+          font-size: .7em;
+          padding-top: 10px;
+          vertical-align: middle;
+          margin-left: 8px; }
+      main #section_7 .section_image {
+        background-image: url("../images/tumblr.jpg"); }
+        main #section_7 .section_image p {
+          background-image: none;
+          background-color: #63c3bd;
+          height: 25px;
+          width: 84px;
+          border-radius: 0 4px 4px 0;
+          float: left;
+          margin-top: 12;
+          padding-top: 3px; } }
+@media screen and (min-width: 1281px) {
+  main {
+    float: left;
+    width: 1100px;
+    margin-left: 180px;
+    margin-top: 50px; }
+    main .col_4_lg {
+      width: 30.8%;
+      float: left;
+      box-sizing: border-box;
+      margin-right: 1.9%;
+      margin-left: 0; }
+      main .col_4_lg:nth-child(3n+1) {
+        margin-right: 0;
+        clear: none; }
+      main .col_4_lg:nth-child(odd) {
+        float: left;
+        margin-right: 1.9%; }
+    main .section_header {
+      margin-left: 0px; }
+      main .section_header #pencil {
+        margin-right: 42px; } }
+
+/*# sourceMappingURL=main.css.map */
