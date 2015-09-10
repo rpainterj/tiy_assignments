@@ -4,102 +4,151 @@
     <meta name="viewport" content="initial-scale=1">
     <meta charset="utf-8">
     <title> Pocket </title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:700,700italic,400,400italic,300,300italic' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="css/resetstylesheet.css">
-    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
   </head>
 
   <body>
-  <div class= "wrapper">
+  <div class= "outmost_wrapper">
     <header>
-      <div class="color_band"></div>
-      <a href="#" id="pocketlogo"><img href="#"></a>
-      <a href="#" id="hamburger_button"><img href="#"></a>
-      <a href="#"> Home </a>
-      <a href="#"> Recommended </a>
-      <a href="#"> My List </a>
-      <a href="#" id="plus_icon"><img href="#"></a>
-      <a href="#" id="search_icon"><img href="#"></a>
-      <a href="#" id="plus_icon"><img href="#"></a>
-      <a href="#" id="mail_icon"><img href="#"></a>
-      <a href="#" id="TIY"> TIY <img href="#"></a> <!-- Insert downwards carat in img tag -->
-	  <a href="#" id="Upgrade"> Upgrade <img href="#"></a>
+      <div class="color_band">
+      	<div></div>
+      	<div></div>
+      	<div></div>
+      	<div></div>
+      </div>
+      <a href="#" id="pocket_logo"><img src="images/logo.png"></a>
+      <a href="#" id="hamburger_icon"><img src="images/sm_screen_nav.png"></a>
+      <a href="#" id="home_link"> Home </a>
+      <a href="#" id="recommended_link"> Recommended </a>
+      <a href="#" id="my_list_link"> My List </a>
+      <a href="#" id="upgrade"> Upgrade <img href="#"></a>
+      <a href="#" id="TIY"> TIY <img src="images/down_arrow.png"></a> <!-- Insert downwards carat in img tag -->
+      <a href="#" id="mail_icon"><img src="images/email_icon.png"></a>
+      <a href="#" id="plus_icon"><img src="images/plus.png"></a>
+      <a href="#" id="search_icon"><img src="images/search.png"></a>
+      <a href="#" id="plus_icon_2"><img src="images/plus.png"></a>
+      
+      
+	  
 	</header>
 
-	<main>
-	  <nav> <!--display only on the large screen-->
-	    <ul class="top_nav_list">
-	      <li> My List </li>
-	      <li> Archive </li>
-	      <li> <!--Line--> </li>
-	      <li> Articles </li>
-	      <li> Videos </li>
-	      <li> Images </li>
-	      <li> Tags <img href="#"></li> <!-- Insert sideways carat in img tag -->
-	    </ul>
-	  </nav>
+	<div class="body_wrapper">
+		  
+		<div class="sidebar">
 
-	  <nav>
-	  	<ul class="bottom_nav_list">
-	  	  <li> Get the app </li>
-	  	  <img href="#" class= "google_play">
-	  	  <img href="#" class= "app_store">
-	  	  <li> Articles </li>
-	      <li> Videos </li>
-	      <li> Images </li>
-	      <li> Tags <img href="#"></li> <!-- Insert sideways carat in img tag -->
-	      <!-- ^^ these last three items are duplicates of the top nav list ^^ -->
-	    </ul>
-	  </nav>
+		  <section class= "top_nav"> <!--display only on the large screen-->
+		    <ul class="top_nav_list">
+		      <a href="#"><li> My List </li></a>
+		      <a href="#"><li> Favorites </li></a>
+		      <a href="#"><li> Archive </li></a>
+		      <li><div class= "top_nav_list_separator"></div></li>
+		      <!-- <a href="#"><li> Line </li></a> -->
+		      <a href="#"><li> Articles </li></a>
+		      <a href="#"><li> Videos </li></a>
+		      <a href="#"><li> Images </li></a>
+		      <a href="#"><li> Tags <img src="images/right_arrow.png"></li></a> <!-- Insert sideways carat in img tag -->
+		    </ul>
+		  </section>
 
-	  <div class="section_header">
-	  	<h1> My List </h1>
-	  	<a href="#" id="mini_menu"><img href="#"></a>
-	  	<a href="#" id="pencil"><img href="#"></a>
-	  </div>
+		  <section class="app_nav">
+		  	  <a href="#"> Get the app: </a>
+		  	  <a href="#">
+		  	  	<div id="google_play"></div>
+		  	  </a>
+		  	  <a href="#">
+		  	  	<div id="app_store"></div>
+		  	  </a>
+		  </section>
 
-	  <section class="section_1">
-	    <a href="#" class="article_title"> Dean Jones, Star of Disney's 'The Love Bug,' Dies at 84 </a>
-	  	<img href="#">
-	  	<a href="#" class="source_site"> nytimes.com </a>
-	  </section>
+		  <!-- <section class= "bottom_nav">
+		  	<ul class="bottom_nav_list">
+		  	  <a href="#"><li> Articles </li></a>
+		      <a href="#"><li> Videos </li></a>
+		      <a href="#"><li> Images </li></a>
+		      <a href="#"><li> Tags <img src="images/right_arrow.png"></li></a> Insert sideways carat in img tag
+		      ^^ these last three items are duplicates of the top nav list ^^ 
+		    </ul>
+		  </section> -->
 
-	  <section class="section_2">
-	    <a href="#" class="article_title"> In a First, Chinese Navy Sails Off Alaska </a>
-	  	<img href="#">
-	  	<a href="#" class="source_site"> nytimes.com </a>
-	  </section>
+		</div>
 
-	  <section class="section_3">
-	    <a href="#" class="article_title"> Rim to River - Medium </a>
-	  	<img href="#">
-	  	<a href="#" class="source_site"> medium.com </a>
-	  </section>
+	    <main> 
 
-	  <section class="section_4">
-	    <a href="#" class="article_title"> Holga's digital toy camera lets you take Instagram pics IRL </a>
-	  	<img href="#">
-	  	<a href="#" class="source_site"> mashable.com </a>
-	  </section>
+		  <div class="section_header">
+		  	<h1> My List </h1>
+		  	<a href="#" id="pencil"></a>
+		  	<a href="#" id="mini_menu"></a>
+		  </div>
 
-	  <section class="section_5">
-	    <a href="#" class="article_title"> Google's iconic logo is changing in a big way </a>
-	  	<img href="#">
-	  	<a href="#" class="source_site"> mashable.com </a>
-	  </section>
+		  <section id="section_1" class="col_12_sm  col_6_md  col_4_lg">
+		    <a href="#" class="article_title"> Dean Jones, Star of Disney&#146;s &#145;The Love Bug,&#146; Dies at 84 </a>
+		  	<a href="#"><div class="section_image"></div></a>
+		  	<div>
+		  		<img src="images/nyt_icon.png">
+		  		<a href="#" class="source_site"> nytimes.com </a>
+		  	</div>
+		  </section>
 
-	  <section class="section_6">
-	    <a href="#" class="article_title"> Disabled woman petitions J.Crew to design stylish canes </a>
-	  	<img href="#">
-	  	<a href="#" class="source_site"> mashable.com </a>
-	  </section>
+		  <section id="section_2" class="col_12_sm  col_6_md  col_4_lg">
+		    <a href="#" class="article_title"> In a First, Chinese Navy Sails Off Alaska </a>
+		  	<a href="#"><div class="section_image"><p> Trending </p></div></a>
+		  	<p class="alaska_text"> WASHINGTON &#151; Five Chinese Navy Ships were sailing in international waters of the Bering Sea off the coast of Alaska on Wednesday, in what Pentagon officials said was the first such foray by Beijing.</p>
+		  	<div>
+		  		<img src="images/nyt_icon.png">
+		  		<a href="#" class="source_site"> nytimes.com </a>
+		  	</div>
+		  </section>
 
-	  <section class="section_7">
-	    <a href="#" class="article_title"> Tumblr changes reblogs so you can actually read them </a>
-	  	<img href="#">
-	  	<a href="#" class="source_site"> mashable.com </a>
-	  </section>
+		  <section id="section_3" class="col_12_sm  col_6_md  col_4_lg">
+		    <a href="#" class="article_title"> Rim to River &#151; Medium </a>
+		  	<a href="#"><div class="section_image"></div></a>
+		  	<div>
+		  		<img src="images/medium_icon.png">
+		  		<a href="#" class="source_site"> medium.com </a>
+		  	</div>
+		  </section>
 
-	</main>
+		  <section id="section_4" class="col_12_sm  col_6_md  col_4_lg">
+		    <a href="#" class="article_title"> Holga&#146;s digital toy camera lets you take Instagram pics IRL </a>
+		  	<a href="#"><div class="section_image"></div></a>
+		  	<div>
+		  		<img src="images/mashable_icon.png">
+		  		<a href="#" class="source_site"> mashable.com </a>
+		  	</div>
+		  </section>
+
+		  <section id="section_5" class="col_12_sm  col_6_md  col_4_lg">
+		    <a href="#" class="article_title"> Google&#146;s iconic logo is changing in a big way </a>
+		  	<a href="#"><div class="section_image"></div></a>
+		  	<div>
+		  		<img src="images/mashable_icon.png">
+		  		<a href="#" class="source_site"> mashable.com </a>
+		  	</div>
+		  </section>
+
+		  <section id="section_6" class="col_12_sm  col_6_md  col_4_lg">
+		    <a href="#" class="article_title"> Disabled woman petitions J.Crew to design stylish canes </a>
+		  	<a href="#"><div class="section_image"></div></a>
+		  	<div>
+		  		<img src="images/mashable_icon.png">
+		  		<a href="#" class="source_site"> mashable.com </a>
+		  	</div>
+		  </section>
+
+		  <section id="section_7" class="col_12_sm  col_6_md  col_4_lg">
+		    <a href="#" class="article_title"> Tumblr changes reblogs so you can actually read them </a>
+		  	<a href="#"><div class="section_image"><p> Trending </p></div></a>
+		  	<div>
+		  		<img src="images/mashable_icon.png">
+		  		<a href="#" class="source_site"> mashable.com </a>
+		  	</div>
+		  </section>
+
+	    </main>
+
+	</div>
   
   </div>
 

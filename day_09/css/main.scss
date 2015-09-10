@@ -1,63 +1,422 @@
 @import 'variables', 'mixins';
 
-.outmost_wrapper{
-	width: 100%;
-	overflow:auto;
-
-	
-
+*{
+	box-sizing:border-box;
+	text-decoration: none;
 }
 
 body {
 	width: 100%;
 	overflow: auto;
+	font-size: 1em;
+	background-color: $secondary_background_color;
 }
+
+.outmost_wrapper{
+	width: 100%;
+	overflow:auto;
+}
+
+.body_wrapper{
+	width: 100%;
+	overflow:auto;
+
+}
+
+main{
+	padding-bottom: 40px;
+}
+
+// h1{
+// 	font-family: "Lato", sans-serif;
+//     		font-weight: 300;
+// }
 
 
 /* Header */
 
-.color_band{
-	width:100%;
-	overflow:auto;
+@import 'header';
+	
+/* Sidebar */
 
-	div:nth-child(1){
-		background-color: $border_green;
-		width: 25%;
+.sidebar{
+	display:none;
+
+}
+
+@media screen and (min-width: 1281px){
+	.sidebar{
+		display: block;
 		float: left;
-		height: 2px;
+		position: fixed;
+		width:180px;
+		padding-top: 50px;
+		background-color: $secondary_background_color;
 
 	}
 
-	div:nth-child(2){
-		@extend div:nth-child(1);
-		bacgkround-color: $border_green_2;
+	.top_nav_list{
+		font-size: .9em;
+		color: $primary_text_color;
+		font-weight:700;
+		display: block;
+		margin-left: 40px;
+		margin-top: 37px;
+		padding-top: 0px;
+		list-style-type: none;
+		padding-left: 0px;
+		text-decoration: none;
+		padding-bottom: 212px;
+		color: $primary_text_color;
+
+		a{
+			li{
+				margin-bottom:15px;
+				margin-right:0px;
+
+			}
+
+			&:link{
+				color: $primary_text_color;
+			}
+
+			&:hover{
+				color: $primary_hover_color;
+			}
+
+			&:visited{
+				color: $primary_text_color;
+			}
+
+		}
+
+		li{	
+		
+			.top_nav_list_separator{
+				height: 1px;
+				width: 20px;
+				background-color: $secondary_border_color;
+				margin-bottom: 20px;
+				
+			}
+
+			&:hover{
+				color: $primary_hover_color;
+			}
+
+		}
+
 	}
 
-	div:nth-child(3){
-		@extend div:nth-child(1);
-		bacgkround-color: $border_red;
+	.app_nav{
+		a{
+			font-size: .8em;
+			margin-left: 40px;
+			color: $secondary_text_color;
+			display:block;
+		
+
+			#google_play{
+				background: url("../images/google_play.png") center center no-repeat;
+				width: 110px;
+				height: 34px;
+				border: 1px solid $secondary_border_color;
+				border-radius: 4px;
+				margin-left: -10px;
+				margin-top: 10px;
+				
+			}
+
+			#app_store{
+				@extend #google_play;
+				background-image: url("../images/app_store.png");
+				background-size: 80%;
+
+
+			}
+
+		}
+
 	}
 
-	div:nth-child(4){
-		@extend div:nth-child(1);
-		bacgkround-color: $border_yellow;
+	.bottom_nav_list{
+		font-size: .9em;
+		color: $primary_text_color;
+		font-weight:700;
+		display: block;
+		margin-left: 40px;
+		margin-top: 37px;
+		padding-top: 0px;
+		list-style-type: none;
+		padding-left: 0px;
+		text-decoration: none;
+
+		a{
+			li{
+				margin-bottom:15px;
+				margin-right:0px;
+			}
+
+
+		}
+
+	}
+}
+
+
+
+/* Main Content */
+
+
+
+
+main{
+	.section_header{
+		display:none;
+	}
+
+	#section_1{
+		@include sections_sm;
+	}
+
+	#section_2{
+		@extend #section_1;
+
+		.section_image {
+			background-image: url("../images/grey.png");
+		}
+
+	}
+
+	#section_3{
+		@extend #section_1;
+
+		.section_image {
+			background-image: url("../images/cartoon.jpeg");
+		}
+		
+	}
+
+	#section_4{
+		@extend #section_1;
+
+		.section_image {
+			background-image: url("../images/instagram.jpg");
+		}
+		
+	}
+
+	#section_5{
+		@extend #section_1;
+
+		.section_image {
+			background-image: url("../images/google.jpg");
+		}
+		
+	}
+
+	#section_6{
+		@extend #section_1;
+
+		.section_image {
+			background-image: url("../images/jcrew.jpg");
+		}
+		
+	}
+	#section_7{
+		@extend #section_1;
+
+		.section_image {
+			background-image: url("../images/tumblr.jpg");
+		}
+		
+	}
+	
+	
+}
+
+@media screen and (min-width: 672px){
+	main{
+		width: 100%;
+		background-color: $secondary_background_color;
+		overflow:hidden;
+
+
+		.section_header{
+			display:block;
+			font-size: 1em;
+			margin-left: 18px;
+			float:left;
+			width:100%;
+			margin-top: 30px;
+    		margin-bottom: 19px;
+    		
+
+    		
+
+			h1{
+				display:inline;
+				font-family: "Lato", sans-serif;
+    			font-weight: 400;
+
+			}
+
+			#pencil{
+				overflow:auto;
+				float:right;
+				background-image: url("../images/pencil_icon.png");
+				height: 20px;
+				width: 20px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				display:inline-block;
+				margin-right: 32px;
+				margin-top: 15px;
+				
+			}
+
+			#mini_menu{
+				overflow:auto;
+				float:right;
+				background-image: url("../images/list_icon.png");
+				height: 20px;
+				width: 20px;
+				background-size: contain;
+				background-repeat: no-repeat;
+				display:inline-block;
+				margin-right: 20px;
+    			margin-top: 17px;
+			}
+
+
+		}
+
+		.col_6_md{
+			@include grid(6);
+
+		}
+
+		#section_1{
+			@include sections_md;
+			
+		}
+
+		#section_2{
+			@include sections_md;
+
+			.section_image {
+				background-image: none;
+				background-color: $trending_color;
+				height: 25px;
+				width: 84px;
+				border-radius: 0 4px 4px 0;
+				float:left;
+			}
+
+		}
+
+		#section_3{
+			@include sections_md;
+
+			.section_image {
+				background-image: url("../images/cartoon.jpeg");
+			}
+
+		}
+
+		#section_4{
+			@include sections_md;
+
+			.section_image {
+				background-image: url("../images/instagram.jpg");
+			}
+			
+		}
+
+		#section_5{
+			@include sections_md;
+
+			.section_image {
+				background-image: url("../images/google.jpg");
+			}
+			
+		}
+
+		#section_6{
+			@include sections_md;
+
+			.section_image {
+				background-image: url("../images/jcrew.jpg");
+			}
+			
+		}
+		#section_7{
+			@include sections_md;
+
+			.section_image {
+				background-image: url("../images/tumblr.jpg");
+
+				p{
+					background-image: none;
+					background-color: $trending_color;
+					height: 25px;
+					width: 84px;
+					border-radius: 0 4px 4px 0;
+					float:left;
+					margin-top: 12;
+    				padding-top: 3px;
+				}
+			}
+			
+		}
 	}
 
 
+}
+
+@media screen and (min-width: 1281px){
+
+	main{
+		float: left;
+		width: 1100px;
+		margin-left: 180px;
+		margin-top: 50px;
 
 
+	
 
+		.col_4_lg{
+			@include grid_lg(4);
+		}
+
+		.section_header{
+			margin-left: 0px;
+
+			
+
+			#pencil{
+				margin-right: 42px;
+			}
+		}
+	}
 
 
 
 }
-header{
-	width: 100%;
-	height: 50px;
-	overflow: auto;
-	background-color: $secondary_background_color;
 
 
 
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
