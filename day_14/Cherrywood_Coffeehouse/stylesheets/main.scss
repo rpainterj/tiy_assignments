@@ -1,0 +1,159 @@
+@import "bourbon/bourbon", "variables";
+
+* {
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: $red;
+}
+
+body{
+	width: 100%;
+	background-color: $primary_background_color;
+	padding: 20px;
+}
+
+.header{
+	width: 100%;	
+}
+
+header{
+	width: 100%;
+	
+	.logo{
+		height: 80px;
+		width: 80px;
+		border: 2px solid $light_brown;
+		display:inline-block;
+	}
+
+	.title{
+		font-family: "industry-inc-base", sans-serif;
+		color: $primary_text_color;
+		font-size: 2em;
+		display: inline-block;
+	}
+
+	.header_border{
+		height:6px;
+		width: 100%;
+		border-top: 2px solid $light_brown;
+		border-bottom: 2px solid $dark_brown;
+	}
+
+}
+
+nav{
+	width: 100%;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+	text-align: center;
+	
+
+	li{
+		display:inline;
+		font-size: 1em;
+		padding: 10px 20px;
+
+
+	}
+		
+}
+
+
+
+
+/* Main Content */
+
+.menu_section{
+	width:100%;
+	
+}
+	
+.menu_description{
+	padding: 20px;
+	border: 2px solid $dark_blue;
+	position: relative;
+	width: 50%;
+	float:left;
+
+	h3{
+		font-family: "Damion";
+		font-size: 1.5em;
+		color: $dark_blue;
+		background-color: $primary_background-color; 
+		margin: 0;
+		position: absolute;
+		top: -20px;
+		padding-right: 5px;
+		display: inline;
+
+	}
+
+	p{
+		font-family: "aktiv-grotesk", sans-serif;
+		margin:0;
+	}
+}
+
+.menu_options{
+	width:50%;
+	float:right;
+	
+	a{
+		clear:left;
+	}
+
+	h4{
+		font-family: "industry-inc-base", sans-serif;
+		border: 2px solid $dark_blue;
+		margin: 0 0 10px 10px;
+		display: inline-block;
+		padding: 4px 4px 0 4px;
+		clear:left;
+
+	}
+}
+
+.menu_item{
+	width: 100%;
+}
+
+.price{
+	float:right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
