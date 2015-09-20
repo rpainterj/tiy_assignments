@@ -377,7 +377,7 @@ h1, h2, h3, p {
 
 h1 {
   font-family: "Aldrich";
-  font-size: 4em;
+  font-size: 5em;
   text-transform: uppercase; }
 
 h2 {
@@ -391,15 +391,15 @@ h3 {
   font-size: 2em; }
 
 p {
-  font-family: "Eurostile"; }
+  font-family: "Eurostile";
+  font-size: 2em; }
 
 a {
   font-family: "Roboto";
   font-weight: 300;
   text-decoration: none;
   background-color: #e86843;
-  color: #dfa51e;
-  border: 1px solid #c52e2f; }
+  color: #dfa51e; }
 
 /*********************
 **********************/
@@ -407,35 +407,90 @@ a {
 	Intro Section
 **********************/
 h1 {
-  border: 2px solid #d8cab0;
+  border: 6px solid #d8cab0;
   text-align: center;
   text-shadow: 2px 2px 5px #c52e2f;
   display: inline-block;
-  padding: 10px 10px 0px 10px; }
+  padding: 10px 10px 0px 10px;
+  margin-top: 0; }
+
+.intro {
+  perspective: 1200px;
+  perspective-origin: right top;
+  overflow-x: hidden; }
 
 h2 {
-  transform: rotate(-10deg);
+  transform: rotate(-10deg) translateX(-30px);
   text-align: center;
-  background-color: #3a407a; }
+  background-color: #322e2f;
+  padding-left: 100px;
+  font-size: 2em;
+  margin-bottom: 0;
+  transform-origin: top right;
+  overflow-x: hidden;
+  width: 120%;
+  padding-right: 20%;
+  padding-left: 10%; }
 
 .summary {
-  transform: rotate(-10deg) translate(8px, 20px);
-  padding-bottom: 10px;
+  padding-bottom: 0;
   text-align: center;
-  background-color: #3a407a; }
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: 10px;
+  overflow-y: auto; }
+  .summary p {
+    background-color: #322e2f;
+    transform: rotate(-10deg) translateX(-30px);
+    width: 120%;
+    transform-origin: top right;
+    padding-right: 20px; }
+  .summary p:nth-child(1) {
+    padding-right: 18%;
+    padding-left: 10%;
+    margin-left: -5%; }
+  .summary p:nth-child(2) {
+    margin-bottom: 0;
+    padding-left: 18%;
+    padding-right: 10%;
+    margin-left: -5%; }
+  .summary::after {
+    content: url("../images/trotsky.png");
+    transform: translateY(400px);
+    padding-top: 20px; }
 
-.preamble h3 {
-  background-color: #d8cab0;
-  text-align: center; }
-.preamble p {
-  padding: 10px; }
-.preamble p:nth-child(3) {
-  padding-left: 30px;
-  font-family: "Refrigerator Deluxe";
-  border-left: 10px solid #d8cab0;
-  border-right: 10px solid #d8cab0; }
-.preamble p:nth-child(4) {
-  padding-right: 100px; }
+.preamble {
+  margin-top: 0;
+  background-color: #322e2f; }
+  .preamble h3 {
+    background-color: #d8cab0;
+    text-align: center;
+    font-size: 2em;
+    display: inline-block;
+    padding-top: 15px;
+    margin: 0 auto;
+    width: 100%; }
+  .preamble h3::before, .preamble h3::after {
+    content: "!";
+    font-size: 2em;
+    font-family: "Aldrich";
+    color: #322e2f;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .preamble p {
+    padding: 14px;
+    font-size: 1.5em; }
+  .preamble p:nth-child(3) {
+    padding-left: 30px;
+    font-family: "Refrigerator Deluxe";
+    border-left: 10px solid #d8cab0;
+    border-right: 10px solid #d8cab0;
+    color: #c52e2f; }
+  .preamble p:nth-child(4) {
+    padding-right: 100px;
+    margin-bottom: 0; }
 
 /********************
 main paragraphs
@@ -445,24 +500,35 @@ main paragraphs
   padding-left: 20px;
   border-bottom: 1em solid #c52e2f;
   background-color: #dfa51e;
-  margin-bottom: 0; }
-.explanation p {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 300px;
+  padding-bottom: 30px; }
+.explanation p:nth-child(2) {
   font-size: 1.5em;
-  border: 10px solid #dfa51e;
-  padding: 6px;
+  border-bottom: 10px solid #dfa51e;
+  padding: 10px;
   margin: 0px;
   text-align: center; }
+.explanation p:nth-child(3) {
+  font-size: 1.8em;
+  border-bottom: 200px solid #dfa51e;
+  font-family: "Refrigerator Deluxe";
+  padding: 10px;
+  margin: 0px;
+  text-align: left; }
 
 .participation {
   width: 100%;
-  height: 1200px;
-  background-image: url("../images/arm.svg");
+  height: 1500px;
+  background-image: url("../images/arm_mono.svg");
   background-size: 900px;
   background-repeat: no-repeat;
-  padding-top: 270px;
+  padding-top: 200px;
   margin-top: 200px; }
   .participation h3 {
     padding-left: 6px;
+    padding-right: 6px;
     background-color: #f7f3e1;
     transform: rotate(5deg) translateX(40px);
     display: inline-block;
@@ -470,48 +536,127 @@ main paragraphs
     font-size: 2.5em; }
   .participation p {
     color: #074e90;
-    padding: 0 6px 0 6px;
+    padding: 4px 10px 4px 10px;
     background-color: #f7f3e1;
     transform: translateX(31px);
-    max-width: 240px; }
+    max-width: 240px;
+    font-size: 1.2em; }
   .participation p:nth-child(2) {
     transform: rotate(5deg) translateX(40px); }
 
 .benefits {
-  background-color: #868733;
-  padding: 6px;
+  background-color: #322e2f;
+  padding: 20px;
   border: 10px solid #c52e2f;
-  max-width: 600px; }
+  max-width: 600px;
+  box-shadow: 10 10px 0px 0px black;
+  z-index: 100; }
   .benefits h3 {
-    color: #074e90;
+    color: #d8cab0;
     text-align: center;
     font-size: 3em;
-    margin: 0; }
+    margin: 0;
+    border-bottom: 10px solid #c52e2f;
+    padding: 10px;
+    letter-spacing: .2em;
+    text-shadow: -2px 2px 0 #c52e2f, -2px -2px 0 #c52e2f, 2px 2px 0 #c52e2f, 2px -2px 0 #c52e2f; }
+  .benefits h3::before, .benefits h3::after {
+    content: "!";
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Refrigerator Deluxe";
+    font-weight: 600;
+    color: #c52e2f;
+    float: left;
+    height: 110px;
+    width: 40px;
+    text-shadow: -8px 8px 0 #322e2f, -8px -8px 0 #322e2f, 8px 8px 0 #322e2f, 8px -8px 0 #322e2f; }
+  .benefits h3::after {
+    float: right; }
+  .benefits p {
+    text-align: center; }
+  .benefits p::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #c52e2f;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px; }
 
 .requirements {
-  background-color: #3a407a;
-  padding-top: 200px; }
+  background: #3a407a url(../images/plane.svg) no-repeat 0px 100px;
+  padding-top: 200px;
+  padding-bottom: 50px; }
   .requirements h3 {
     font-family: "Stint Ultra Expanded";
-    margin-top: 0; }
+    margin-top: 0;
+    padding: 12px;
+    text-align: right;
+    color: #d8cab0; }
   .requirements p {
-    font-family: "Refrigerator Deluxe"; }
+    font-family: "Refrigerator Deluxe";
+    font-size: 1.5em;
+    padding: 14px; }
+  .requirements p:nth-child(3) {
+    border: 14px solid #e86843; }
 
 footer {
-  background-color: #c52e2f; }
+  background-color: #e86843;
+  margin: 0;
+  text-align: center; }
+  footer a {
+    display: inline-block;
+    padding: 4px;
+    margin: 0;
+    background-color: #3a407a;
+    padding-left: 8px;
+    padding-right: 8px; }
 
 /*************
 Sidebar
 **************/
 .sidebar {
-  padding-bottom: 200px; }
+  padding-bottom: 200px;
+  background: #000 url("../images/trotsky2.jpg") no-repeat 0 200px;
+  width: 100%;
+  overflow: auto; }
+  .sidebar h3 {
+    color: #c52e2f;
+    text-shadow: -1px 1px 0 #f7f3e1, -1px -1px 0 #f7f3e1, 1px 1px 0 #f7f3e1, 1px -1px 0 #f7f3e1; }
+  .sidebar a {
+    background-color: #c52e2f;
+    color: #f7f3e1; }
 
 .design-selection {
   font-family: "Refrigerator Deluxe"; }
-  .design-selection li:nth-child(odd) {
-    transform: rotate(20deg) translateX(40px); }
-  .design-selection li:nth-child(even) {
-    transform: rotate(-20deg) translateX(-40px); }
+  .design-selection h3 {
+    text-align: center;
+    margin-top: 160px; }
+  .design-selection a {
+    width: 50%;
+    border: none; }
+  .design-selection li:nth-child(1), .design-selection li:nth-child(2), .design-selection li:nth-child(3), .design-selection li:nth-child(4) {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    transform: rotate(5deg);
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    background-color: #c52e2f; }
+  .design-selection li:nth-child(5), .design-selection li:nth-child(6), .design-selection li:nth-child(7), .design-selection li:nth-child(8) {
+    display: inline-block;
+    float: right;
+    width: 50%;
+    transform: rotate(5deg);
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+    background-color: #c52e2f; }
 
 .design-archives {
   width: 50%;
