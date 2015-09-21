@@ -13,19 +13,18 @@ text-shadow:
 
 	}
 
-	25%{
-
-	}
-
-	50%{
-
-	}
-
-	75%{
-
-	}
-
 	100%{background-size: 1600px;
+
+	}
+
+}
+
+@keyframes triangle{
+	0%{top: -160px;;
+
+	}
+	
+	100%{top: -120px;;
 
 	}
 

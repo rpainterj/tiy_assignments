@@ -258,6 +258,15 @@ main paragraphs
 .explanation{
 	overflow: auto;
 	border-bottom: 200px solid $link_text_color;
+
+	&:hover{
+			
+		p:nth-child(3){
+			&::after{
+				animation: triangle 3s ease-in-out 1s alternate infinite;
+			}
+		}
+	}
 	h3{
 		font-size: 3em;
 		padding-left: 20px;
@@ -311,6 +320,7 @@ main paragraphs
 				top: -160px;
 				transform: scale(8.5);
 				overflow-x: hidden;
+
 			}
 
 		

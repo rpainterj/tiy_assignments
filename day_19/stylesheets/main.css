@@ -362,6 +362,11 @@ th {
     background-size: 1400px; }
   100% {
     background-size: 1600px; } }
+@keyframes triangle {
+  0% {
+    top: -160px; }
+  100% {
+    top: -120px; } }
 body {
   background-color: #074e90; }
 
@@ -527,6 +532,8 @@ main paragraphs
 .explanation {
   overflow: auto;
   border-bottom: 200px solid #dfa51e; }
+  .explanation:hover p:nth-child(3)::after {
+    animation: triangle 3s ease-in-out 1s alternate infinite; }
   .explanation h3 {
     font-size: 3em;
     padding-left: 20px;
