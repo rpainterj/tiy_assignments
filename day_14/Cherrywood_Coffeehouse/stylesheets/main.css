@@ -23,7 +23,7 @@ p {
 
 body {
   width: 100%;
-  background-color: #fafafa;
+  background-color: #f5f3ee;
   padding: 20px; }
 
 /**************
@@ -71,22 +71,27 @@ ul {
     margin: 0 auto; } }
 
 /* About the Menu */
-.menu_section {
-  width: 100%;
-  overflow: auto;
-  padding-top: 30px; }
-  @media screen and (min-width: 800px) {
-    .menu_section {
-      float: right;
-      padding-top: 55px;
-      width: 220px; } }
+@media screen and (min-width: 450px) {
+  .menu_section {
+    width: 100%;
+    overflow: auto;
+    padding-top: 30px; } }
+@media screen and (min-width: 800px) {
+  .menu_section {
+    float: right;
+    padding-top: 55px;
+    width: 220px; } }
 
 .menu_description {
-  padding: 15px;
-  border: 2px solid #003663;
-  position: relative;
-  width: 50%;
-  float: left; }
+  display: none; }
+  @media screen and (min-width: 450px) {
+    .menu_description {
+      display: block;
+      padding: 15px;
+      border: 2px solid #003663;
+      position: relative;
+      width: 50%;
+      float: left; } }
   @media screen and (min-width: 800px) {
     .menu_description {
       width: 100%; } }
@@ -94,7 +99,7 @@ ul {
     font-family: "Damion";
     font-size: 1.5em;
     color: #003663;
-    background-color: #fafafa;
+    background-color: #f5f3ee;
     margin: 0;
     position: absolute;
     top: -20px;
@@ -105,16 +110,26 @@ ul {
     color: #003663; }
 
 .menu_options {
-  width: 50%;
-  float: right; }
+  width: 100%;
+  text-align: center;
+  overflow: auto; }
+  @media screen and (min-width: 450px) {
+    .menu_options {
+      width: 50%;
+      float: right; } }
   @media screen and (min-width: 800px) {
     .menu_options {
       width: 100%; } }
   .menu_options a {
     display: inline-block;
-    margin: 0 0 4px 10px;
-    float: left;
-    clear: left; }
+    margin: 0 0 4px 4px;
+    float: left; }
+    @media screen and (min-width: 450px) {
+      .menu_options a {
+        display: inline-block;
+        margin: 0 0 4px 10px;
+        float: left;
+        clear: left; } }
     @media screen and (min-width: 800px) {
       .menu_options a {
         margin: 20px 0 0 0; } }
@@ -165,7 +180,7 @@ h5 {
 .menu_item {
   width: 100%; }
   .menu_item p {
-    padding-left: 10px;
+    padding-left: 0px;
     padding-right: 50px;
     margin-top: 0;
     margin-bottom: 40px; }
@@ -185,7 +200,7 @@ h5 {
   .breakfast_tacos_section h2, .ingredients_section h2 {
     position: absolute;
     top: -15px;
-    background-color: #fafafa;
+    background-color: #f5f3ee;
     margin: 0 auto;
     left: 50%;
     padding-right: 4px;
@@ -195,6 +210,8 @@ h5 {
 
 .ingredients_section {
   width: 100%; }
+  .ingredients_section h2 {
+    margin-left: -85px; }
   .ingredients_section div:nth-child(2) {
     padding-top: 35px; }
 

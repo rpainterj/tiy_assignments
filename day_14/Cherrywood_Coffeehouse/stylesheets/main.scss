@@ -111,9 +111,14 @@ ul {
 /* About the Menu */
 
 .menu_section{
-	width: 100%;
-	overflow:auto;
-	padding-top: 30px;
+
+	@media screen and (min-width: 450px){
+		width: 100%;
+		overflow:auto;
+		padding-top: 30px;
+		
+	
+	}
 
 	@media screen and (min-width:800px){
 		float:right;
@@ -125,11 +130,19 @@ ul {
 }
 	
 .menu_description{
-	padding: 15px;
-	border: 2px solid $dark_blue;
-	position: relative;
-	width: 50%;
-	float:left;
+
+	display:none;
+	
+	@media screen and (min-width: 450px){
+		display: block;
+		padding: 15px;
+		border: 2px solid $dark_blue;
+		position: relative;
+		width: 50%;
+		float:left;
+	}
+
+
 
 	@media screen and (min-width:800px){
 		width: 100%;
@@ -156,18 +169,33 @@ ul {
 }
 
 .menu_options{
-	width:50%;
-	float:right;
+	width:100%;
+	text-align: center;
+	overflow:auto;
+
+
+	@media screen and (min-width: 450px){
+		width:50%;
+		float:right;
+
+	}
 
 	@media screen and (min-width: 800px){
 		width: 100%;
 	}
 
 	a{
-		display:inline-block;
-		margin: 0 0 4px 10px;
-		float:left;
-		clear: left;
+			display:inline-block;
+			margin: 0 0 4px 4px;
+			float:left;
+			
+
+		@media screen and (min-width: 450px){
+			display:inline-block;
+			margin: 0 0 4px 10px;
+			float:left;
+			clear: left;
+		}
 
 		@media screen and (min-width:800px){
 			margin: 20px 0 0 0;
@@ -248,7 +276,7 @@ h5{
 	width: 100%;
 
 	p{
-		padding-left: 10px;
+		padding-left: 0px;
 		padding-right: 50px;
 		margin-top: 0;
 		margin-bottom: 40px;
@@ -291,9 +319,17 @@ h5{
 	@extend .breakfast_tacos_section;
 	width:100%;
 
+	h2{
+		margin-left: -85px;
+	}
+
+
+
 	div:nth-child(2){
 		padding-top: 35px;
 	}
+
+
 
 }
 
