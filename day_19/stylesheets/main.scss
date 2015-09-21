@@ -74,6 +74,11 @@ h1{
 	padding: 10px 10px 0px 10px;
 	margin-top: 0;
 
+	@media screen and (min-width: 800px){
+		margin-top: 100px;
+		margin-bottom: 0;
+	}
+
 }
 .intro{
 	perspective: 1200px;
@@ -107,7 +112,7 @@ h2{
 	overflow-x: hidden;
 	padding-top:10px;
 	overflow-y:auto;
-	
+
 
 	
 	p {
@@ -134,7 +139,6 @@ h2{
 		padding-left: 18%;
 		padding-right: 10%;
 		margin-left: -5%;
-
 		
 	
 	}
@@ -144,6 +148,12 @@ h2{
 		transform: translateY(400px);
 		padding-top: 20px;
 
+		@media screen and (min-width: 800px){
+			margin-top: 100px;
+			margin-bottom: 0;
+			content: url("../images/trotsky3.png");
+		}
+
 	}
 
 }
@@ -151,7 +161,13 @@ h2{
 .preamble{
 	margin-top:0;
 	background-color: $black;
+	max-width: 638px;
+	margin-left:auto;
+	margin-right: auto;
+
 	
+
+
 	h3{
 		background-color: $primary_text_color;
 		text-align: center;
@@ -202,6 +218,11 @@ h2{
 	p:nth-child(4){
 		padding-right: 100px;
 		margin-bottom: 0;
+
+		@media screen and (min-width: 800px){
+			
+			
+		}
 	}
 
 
@@ -213,7 +234,13 @@ h2{
 main paragraphs
 ********************/
 
+.main {
+	position: relative;
+}
+
 .explanation{
+	overflow: auto;
+	border-bottom: 200px solid $link_text_color;
 	h3{
 		font-size: 3em;
 		padding-left: 20px;
@@ -231,27 +258,64 @@ main paragraphs
 		padding: 10px;
 		margin:0px;
 		text-align: center;
+		
+		@media screen and (min-width: 800px){
+			width: 40%;
+			float: left;
+			border-bottom: none;
+				
+			
+		}
 	}
 
 	p:nth-child(3) { 
 		font-size: 1.8em;
-		border-bottom: 200px solid $link_text_color;
+		
 		font-family: "Refrigerator Deluxe";
 		padding: 10px;
 		margin:0px;
 		text-align: left;
+
+		@media screen and (min-width: 800px){
+			width: 40%;
+			float: left;
+			border-left: 10px solid $link_text_color;
+
+			&::after{
+				content: "";
+				font-size: 0px; line-height: 0%; 
+				border-top: 10px solid $primary_background_color;
+				border-right: 20px solid $header_text_color;
+				border-bottom: 10px solid $primary_background_color;
+				float:right;
+				position: relative; 
+				right: -34%;
+				top: -160px;
+				transform: scale(8.5);
+				overflow-x: hidden;
+			}
+
+		
+		}
 		
 	}
 }
 
 .participation{
 	width:100%;
-	height: 1500px;
+	height: 1600px;
 	background-image: url("../images/arm_mono.svg");
 	background-size: 900px;
 	background-repeat: no-repeat;
-	padding-top: 200px;
-	margin-top:200px;
+	padding-top: 100px;
+	margin-top:100px;
+	clear:left;
+	position:relative;
+
+	@media screen and (min-width:1100px){
+		border-right: 300px dotted $header_text_color;
+		background-size: 1400px;
+	}
 
 	
 
@@ -264,6 +328,10 @@ main paragraphs
 		display: inline-block;
 		margin: 0;
 		font-size: 2.5em;
+
+		@media screen and (min-width:1100px){
+			margin-left: 200px;
+		}
 	}
 
 	p{
@@ -273,6 +341,10 @@ main paragraphs
 		transform: translateX(31px);
 		max-width:240px;
 		font-size:1.2em;
+
+		@media screen and (min-width:1100px){
+			margin-left: 200px;
+		}
 	}
 
 	p:nth-child(2){
@@ -285,9 +357,21 @@ main paragraphs
 	background-color: $black;
 	padding: 20px;
 	border: 10px solid $header_text_color;
-	max-width: 600px;
+	max-width: 560px;
 	box-shadow: 10 10px 0px 0px black;
 	z-index: 100;
+	float: right;
+
+	&::after{
+		clear:both;
+	}
+
+	@media screen and (min-width: 900px){
+		position: relative;
+		bottom: 100px;
+		right: 6%;
+
+	}
 
 
 
@@ -352,7 +436,13 @@ main paragraphs
 	background: $secondary_background_color url(../images/plane.svg) no-repeat 0px 100px;
 	padding-top: 200px;
 	padding-bottom: 50px;
+	clear:both;
+	margin: 0;
 
+	
+	@media screen and (min-width: 1100px){
+		background-size: 2000px;
+	}
 
 	h3{
 		font-family: "Stint Ultra Expanded";
@@ -360,12 +450,23 @@ main paragraphs
 		padding:12px;
 		text-align: right;
 		color: $primary_text_color;
+		padding-right: 22px;
 	}
 
 	p{
 		font-family: "Refrigerator Deluxe";
 		font-size: 1.5em;
 		padding: 14px;
+		max-width: 600px;
+
+		@media screen and (min-width:600px){
+			margin-left: 20%;
+
+		}
+
+		@media screen and (min-width: 1100px){
+			margin-left: 50%;
+		}
 	}
 
 	p:nth-child(3){
@@ -378,6 +479,7 @@ footer{
 	margin: 0;
 	text-align: center;
 
+
 	a{
 		display: inline-block;
 		padding: 4px;
@@ -385,6 +487,7 @@ footer{
 		background-color: $secondary_background_color;
 		padding-left: 8px;
 		padding-right: 8px;
+		color: $link_background_color;
 	}
 }
 
@@ -392,10 +495,16 @@ footer{
 Sidebar
 **************/
 .sidebar{
-	padding-bottom:200px;
-	background: #000 url("../images/trotsky2.jpg") no-repeat 0 200px;
+	padding-bottom:50px;
+	background: $header_text_color url("../images/trotsky2.jpg") no-repeat  center;
 	width: 100%;
 	overflow: auto;
+	border-top: 200px solid $black;
+	border-bottom: 50px solid $black;
+	
+	@media screen and (min-width: 1100px){
+		border-left: 100px solid $black;
+	}
 
 
 	h3{
@@ -416,7 +525,13 @@ Sidebar
 
 	h3{
 		text-align: center;
-		margin-top: 160px;
+		margin-top: 0;
+
+		@media screen and (min-width: 1100px){
+			padding: 10px;
+			text-align: left;
+		}
+
 	}
 
 	
@@ -435,6 +550,11 @@ Sidebar
 		text-align: center;
 		background-color: $header_text_color;
 
+		@media screen and (min-width: 1100px){
+			margin-right: 20%;
+			width: 40%;
+			padding: 8px;
+		}
 
 
 	}
@@ -449,6 +569,12 @@ Sidebar
 		text-align: center;
 		background-color: $header_text_color;
 
+		@media screen and (min-width: 1100px){
+			margin-left: 20%;
+			width: 40%;
+			padding: 8px;
+		}
+
 	}
 
 
@@ -459,7 +585,9 @@ Sidebar
 	float:left;
 	text-align: center;
 	
-
+	li{
+		margin: 20px;
+	}
 	
 	ul{
 		margin:0;
@@ -473,6 +601,9 @@ Sidebar
 	float:left;
 	text-align: center;
 
+	li{
+		margin: 20px;
+	}
 
 	ul{
 		margin:0;

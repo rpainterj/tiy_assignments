@@ -413,6 +413,10 @@ h1 {
   display: inline-block;
   padding: 10px 10px 0px 10px;
   margin-top: 0; }
+  @media screen and (min-width: 800px) {
+    h1 {
+      margin-top: 100px;
+      margin-bottom: 0; } }
 
 .intro {
   perspective: 1200px;
@@ -458,10 +462,18 @@ h2 {
     content: url("../images/trotsky.png");
     transform: translateY(400px);
     padding-top: 20px; }
+    @media screen and (min-width: 800px) {
+      .summary::after {
+        margin-top: 100px;
+        margin-bottom: 0;
+        content: url("../images/trotsky3.png"); } }
 
 .preamble {
   margin-top: 0;
-  background-color: #322e2f; }
+  background-color: #322e2f;
+  max-width: 638px;
+  margin-left: auto;
+  margin-right: auto; }
   .preamble h3 {
     background-color: #d8cab0;
     text-align: center;
@@ -495,37 +507,71 @@ h2 {
 /********************
 main paragraphs
 ********************/
-.explanation h3 {
-  font-size: 3em;
-  padding-left: 20px;
-  border-bottom: 1em solid #c52e2f;
-  background-color: #dfa51e;
-  margin-bottom: 0;
-  margin-top: 0;
-  padding-top: 300px;
-  padding-bottom: 30px; }
-.explanation p:nth-child(2) {
-  font-size: 1.5em;
-  border-bottom: 10px solid #dfa51e;
-  padding: 10px;
-  margin: 0px;
-  text-align: center; }
-.explanation p:nth-child(3) {
-  font-size: 1.8em;
-  border-bottom: 200px solid #dfa51e;
-  font-family: "Refrigerator Deluxe";
-  padding: 10px;
-  margin: 0px;
-  text-align: left; }
+.main {
+  position: relative; }
+
+.explanation {
+  overflow: auto;
+  border-bottom: 200px solid #dfa51e; }
+  .explanation h3 {
+    font-size: 3em;
+    padding-left: 20px;
+    border-bottom: 1em solid #c52e2f;
+    background-color: #dfa51e;
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 300px;
+    padding-bottom: 30px; }
+  .explanation p:nth-child(2) {
+    font-size: 1.5em;
+    border-bottom: 10px solid #dfa51e;
+    padding: 10px;
+    margin: 0px;
+    text-align: center; }
+    @media screen and (min-width: 800px) {
+      .explanation p:nth-child(2) {
+        width: 40%;
+        float: left;
+        border-bottom: none; } }
+  .explanation p:nth-child(3) {
+    font-size: 1.8em;
+    font-family: "Refrigerator Deluxe";
+    padding: 10px;
+    margin: 0px;
+    text-align: left; }
+    @media screen and (min-width: 800px) {
+      .explanation p:nth-child(3) {
+        width: 40%;
+        float: left;
+        border-left: 10px solid #dfa51e; }
+        .explanation p:nth-child(3)::after {
+          content: "";
+          font-size: 0px;
+          line-height: 0%;
+          border-top: 10px solid #074e90;
+          border-right: 20px solid #c52e2f;
+          border-bottom: 10px solid #074e90;
+          float: right;
+          position: relative;
+          right: -34%;
+          top: -160px;
+          transform: scale(8.5);
+          overflow-x: hidden; } }
 
 .participation {
   width: 100%;
-  height: 1500px;
+  height: 1600px;
   background-image: url("../images/arm_mono.svg");
   background-size: 900px;
   background-repeat: no-repeat;
-  padding-top: 200px;
-  margin-top: 200px; }
+  padding-top: 100px;
+  margin-top: 100px;
+  clear: left;
+  position: relative; }
+  @media screen and (min-width: 1100px) {
+    .participation {
+      border-right: 300px dotted #c52e2f;
+      background-size: 1400px; } }
   .participation h3 {
     padding-left: 6px;
     padding-right: 6px;
@@ -534,6 +580,9 @@ main paragraphs
     display: inline-block;
     margin: 0;
     font-size: 2.5em; }
+    @media screen and (min-width: 1100px) {
+      .participation h3 {
+        margin-left: 200px; } }
   .participation p {
     color: #074e90;
     padding: 4px 10px 4px 10px;
@@ -541,6 +590,9 @@ main paragraphs
     transform: translateX(31px);
     max-width: 240px;
     font-size: 1.2em; }
+    @media screen and (min-width: 1100px) {
+      .participation p {
+        margin-left: 200px; } }
   .participation p:nth-child(2) {
     transform: rotate(5deg) translateX(40px); }
 
@@ -548,9 +600,17 @@ main paragraphs
   background-color: #322e2f;
   padding: 20px;
   border: 10px solid #c52e2f;
-  max-width: 600px;
+  max-width: 560px;
   box-shadow: 10 10px 0px 0px black;
-  z-index: 100; }
+  z-index: 100;
+  float: right; }
+  .benefits::after {
+    clear: both; }
+  @media screen and (min-width: 900px) {
+    .benefits {
+      position: relative;
+      bottom: 100px;
+      right: 6%; } }
   .benefits h3 {
     color: #d8cab0;
     text-align: center;
@@ -590,17 +650,30 @@ main paragraphs
 .requirements {
   background: #3a407a url(../images/plane.svg) no-repeat 0px 100px;
   padding-top: 200px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  clear: both;
+  margin: 0; }
+  @media screen and (min-width: 1100px) {
+    .requirements {
+      background-size: 2000px; } }
   .requirements h3 {
     font-family: "Stint Ultra Expanded";
     margin-top: 0;
     padding: 12px;
     text-align: right;
-    color: #d8cab0; }
+    color: #d8cab0;
+    padding-right: 22px; }
   .requirements p {
     font-family: "Refrigerator Deluxe";
     font-size: 1.5em;
-    padding: 14px; }
+    padding: 14px;
+    max-width: 600px; }
+    @media screen and (min-width: 600px) {
+      .requirements p {
+        margin-left: 20%; } }
+    @media screen and (min-width: 1100px) {
+      .requirements p {
+        margin-left: 50%; } }
   .requirements p:nth-child(3) {
     border: 14px solid #e86843; }
 
@@ -614,16 +687,22 @@ footer {
     margin: 0;
     background-color: #3a407a;
     padding-left: 8px;
-    padding-right: 8px; }
+    padding-right: 8px;
+    color: #e86843; }
 
 /*************
 Sidebar
 **************/
 .sidebar {
-  padding-bottom: 200px;
-  background: #000 url("../images/trotsky2.jpg") no-repeat 0 200px;
+  padding-bottom: 50px;
+  background: #c52e2f url("../images/trotsky2.jpg") no-repeat center;
   width: 100%;
-  overflow: auto; }
+  overflow: auto;
+  border-top: 200px solid #322e2f;
+  border-bottom: 50px solid #322e2f; }
+  @media screen and (min-width: 1100px) {
+    .sidebar {
+      border-left: 100px solid #322e2f; } }
   .sidebar h3 {
     color: #c52e2f;
     text-shadow: -1px 1px 0 #f7f3e1, -1px -1px 0 #f7f3e1, 1px 1px 0 #f7f3e1, 1px -1px 0 #f7f3e1; }
@@ -635,7 +714,11 @@ Sidebar
   font-family: "Refrigerator Deluxe"; }
   .design-selection h3 {
     text-align: center;
-    margin-top: 160px; }
+    margin-top: 0; }
+    @media screen and (min-width: 1100px) {
+      .design-selection h3 {
+        padding: 10px;
+        text-align: left; } }
   .design-selection a {
     width: 50%;
     border: none; }
@@ -648,6 +731,11 @@ Sidebar
     padding: 0;
     text-align: center;
     background-color: #c52e2f; }
+    @media screen and (min-width: 1100px) {
+      .design-selection li:nth-child(1), .design-selection li:nth-child(2), .design-selection li:nth-child(3), .design-selection li:nth-child(4) {
+        margin-right: 20%;
+        width: 40%;
+        padding: 8px; } }
   .design-selection li:nth-child(5), .design-selection li:nth-child(6), .design-selection li:nth-child(7), .design-selection li:nth-child(8) {
     display: inline-block;
     float: right;
@@ -657,11 +745,18 @@ Sidebar
     padding: 0;
     text-align: center;
     background-color: #c52e2f; }
+    @media screen and (min-width: 1100px) {
+      .design-selection li:nth-child(5), .design-selection li:nth-child(6), .design-selection li:nth-child(7), .design-selection li:nth-child(8) {
+        margin-left: 20%;
+        width: 40%;
+        padding: 8px; } }
 
 .design-archives {
   width: 50%;
   float: left;
   text-align: center; }
+  .design-archives li {
+    margin: 20px; }
   .design-archives ul {
     margin: 0;
     padding: 0; }
@@ -670,6 +765,8 @@ Sidebar
   width: 50%;
   float: left;
   text-align: center; }
+  .zen-resources li {
+    margin: 20px; }
   .zen-resources ul {
     margin: 0;
     padding: 0; }
