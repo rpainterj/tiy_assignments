@@ -7,3 +7,26 @@ text-shadow:
 (1px)*$size (1px)*$size 0 $color,
 (1px)*$size (-1px)*$size 0 $color;
 }
+
+@keyframes hand{
+	0%{background-size: 1400px;
+
+	}
+
+	25%{
+
+	}
+
+	50%{
+
+	}
+
+	75%{
+
+	}
+
+	100%{background-size: 1600px;
+
+	}
+
+}

@@ -357,6 +357,11 @@ td,
 th {
   padding: 0; }
 
+@keyframes hand {
+  0% {
+    background-size: 1400px; }
+  100% {
+    background-size: 1600px; } }
 body {
   background-color: #074e90; }
 
@@ -395,11 +400,14 @@ p {
   font-size: 2em; }
 
 a {
-  font-family: "Roboto";
   font-weight: 300;
   text-decoration: none;
-  background-color: #e86843;
-  color: #dfa51e; }
+  background-color: #c52e2f;
+  color: #f7f3e1;
+  padding-left: 4px;
+  padding-right: 4px; }
+  a:hover {
+    background-color: #074e90; }
 
 /*********************
 **********************/
@@ -417,6 +425,9 @@ h1 {
     h1 {
       margin-top: 100px;
       margin-bottom: 0; } }
+  @media screen and (min-width: 800px) {
+    h1 {
+      margin-top: 0px; } }
 
 .intro {
   perspective: 1200px;
@@ -494,6 +505,9 @@ h2 {
   .preamble p {
     padding: 14px;
     font-size: 1.5em; }
+    @media screen and (min-width: 1100px) {
+      .preamble p {
+        padding: 22px; } }
   .preamble p:nth-child(3) {
     padding-left: 30px;
     font-family: "Refrigerator Deluxe";
@@ -571,7 +585,9 @@ main paragraphs
   @media screen and (min-width: 1100px) {
     .participation {
       border-right: 300px dotted #c52e2f;
-      background-size: 1400px; } }
+      background-size: 1400px; }
+      .participation:hover {
+        animation: hand 4s ease-in-out 1s alternate infinite; } }
   .participation h3 {
     padding-left: 6px;
     padding-right: 6px;
@@ -676,6 +692,9 @@ main paragraphs
         margin-left: 50%; } }
   .requirements p:nth-child(3) {
     border: 14px solid #e86843; }
+  .requirements a {
+    background-color: #e86843;
+    color: #d8cab0; }
 
 footer {
   background-color: #e86843;

@@ -50,11 +50,17 @@ p{
 }
 
 a{
-	font-family: "Roboto";
+	
 	font-weight: 300;
 	text-decoration: none;
-	background-color: $link_background_color;
-	color: $link_text_color;
+	background-color: $header_text_color;
+	color: $off_white;
+	padding-left:4px;
+	padding-right: 4px;
+
+	&:hover{
+		background-color: $primary_background_color;
+	}
 	
 }
 
@@ -77,6 +83,11 @@ h1{
 	@media screen and (min-width: 800px){
 		margin-top: 100px;
 		margin-bottom: 0;
+	}
+
+	@media screen and (min-width: 800px){
+		margin-top: 0px;
+	
 	}
 
 }
@@ -154,6 +165,8 @@ h2{
 			content: url("../images/trotsky3.png");
 		}
 
+		
+
 	}
 
 }
@@ -205,6 +218,10 @@ h2{
 		padding: 14px;
 		font-size: 1.5em;
 
+		@media screen and (min-width: 1100px){
+			padding: 22px;
+		}
+
 	}
 
 	p:nth-child(3){
@@ -250,6 +267,7 @@ main paragraphs
 		margin-top: 0;
 		padding-top: 300px;
 		padding-bottom: 30px;
+
 	}
 
 	p:nth-child(2) { 
@@ -312,9 +330,16 @@ main paragraphs
 	clear:left;
 	position:relative;
 
+
+
 	@media screen and (min-width:1100px){
 		border-right: 300px dotted $header_text_color;
 		background-size: 1400px;
+
+		&:hover{
+			animation: hand 4s ease-in-out 1s alternate infinite;
+		}
+
 	}
 
 	
@@ -471,6 +496,11 @@ main paragraphs
 
 	p:nth-child(3){
 		border: 14px solid $link_background_color;
+	}
+
+	a{
+		background-color: $link_background_color;
+		color: $primary_text_color;
 	}
 }
 
