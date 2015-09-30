@@ -1,6 +1,7 @@
 ---
 layout: post
-title:  Iron Yard Hackathon: Day 1 
+title:  Iron Yard Hackathon Day 1 
+date:   2015-09-28 11:35:53
 categories: hackathon
 ---
 
