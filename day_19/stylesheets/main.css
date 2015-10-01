@@ -436,17 +436,24 @@ h1 {
 
 .intro {
   perspective: 1200px;
-  perspective-origin: right top;
   overflow-x: hidden; }
 
 h2 {
   transform: rotate(-10deg) translateX(-30px);
+  -webkit-transform: rotate(-10deg) translateX(-30px);
+  -moz-transform: rotate(-10deg) translateX(-30px);
+  transform: rotate(-10deg) translateX(-30px);
+  -o-transform: rotate(-10deg) translateX(-30px);
   text-align: center;
   background-color: #322e2f;
   padding-left: 100px;
   font-size: 2em;
   margin-bottom: 0;
   transform-origin: top right;
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  transform-origin: top right;
+  -o-transform-origin: top right;
   overflow-x: hidden;
   width: 120%;
   padding-right: 20%;
@@ -462,8 +469,16 @@ h2 {
   .summary p {
     background-color: #322e2f;
     transform: rotate(-10deg) translateX(-30px);
+    -webkit-transform: rotate(-10deg) translateX(-30px);
+    -moz-transform: rotate(-10deg) translateX(-30px);
+    transform: rotate(-10deg) translateX(-30px);
+    -o-transform: rotate(-10deg) translateX(-30px);
     width: 120%;
     transform-origin: top right;
+    -webkit-transform-origin: top right;
+    -moz-transform-origin: top right;
+    transform-origin: top right;
+    -o-transform-origin: top right;
     padding-right: 20px; }
   .summary p:nth-child(1) {
     padding-right: 18%;
@@ -477,6 +492,10 @@ h2 {
   .summary::after {
     content: url("../images/trotsky.png");
     transform: translateY(400px);
+    -webkit-transform: translateY(400px);
+    -moz-transform: translateY(400px);
+    transform: translateY(400px);
+    -o-transform: translateY(400px);
     padding-top: 20px; }
     @media screen and (min-width: 800px) {
       .summary::after {
@@ -533,7 +552,11 @@ main paragraphs
   overflow: auto;
   border-bottom: 200px solid #dfa51e; }
   .explanation:hover p:nth-child(3)::after {
-    animation: triangle 3s ease-in-out 1s alternate infinite; }
+    animation: triangle 3s ease-in-out 1s alternate infinite;
+    -webkit-animation: triangle 3s ease-in-out 1s alternate infinite;
+    -moz-animation: triangle 3s ease-in-out 1s alternate infinite;
+    animation: triangle 3s ease-in-out 1s alternate infinite;
+    -o-animation: triangle 3s ease-in-out 1s alternate infinite; }
   .explanation h3 {
     font-size: 3em;
     padding-left: 20px;
@@ -541,7 +564,7 @@ main paragraphs
     background-color: #dfa51e;
     margin-bottom: 0;
     margin-top: 0;
-    padding-top: 300px;
+    padding-top: 200px;
     padding-bottom: 30px; }
   .explanation p:nth-child(2) {
     font-size: 1.5em;
@@ -577,11 +600,15 @@ main paragraphs
           right: -34%;
           top: -160px;
           transform: scale(8.5);
+          -webkit-transform: scale(8.5);
+          -moz-transform: scale(8.5);
+          transform: scale(8.5);
+          -o-transform: scale(8.5);
           overflow-x: hidden; } }
 
 .participation {
   width: 100%;
-  height: 1600px;
+  height: 1400px;
   background-image: url("../images/arm_mono.svg");
   background-size: 900px;
   background-repeat: no-repeat;
@@ -594,12 +621,20 @@ main paragraphs
       border-right: 300px dotted #c52e2f;
       background-size: 1400px; }
       .participation:hover {
-        animation: hand 4s ease-in-out 1s alternate infinite; } }
+        animation: hand 4s ease-in-out 1s alternate infinite;
+        -webkit-animation: hand 4s ease-in-out 1s alternate infinite;
+        -moz-animation: hand 4s ease-in-out 1s alternate infinite;
+        animation: hand 4s ease-in-out 1s alternate infinite;
+        -o-animation: hand 4s ease-in-out 1s alternate infinite; } }
   .participation h3 {
     padding-left: 6px;
     padding-right: 6px;
     background-color: #f7f3e1;
     transform: rotate(5deg) translateX(40px);
+    -webkit-transform: rotate(5deg) translateX(40px);
+    -moz-transform: rotate(5deg) translateX(40px);
+    transform: rotate(5deg) translateX(40px);
+    -o-transform: rotate(5deg) translateX(40px);
     display: inline-block;
     margin: 0;
     font-size: 2.5em; }
@@ -611,13 +646,21 @@ main paragraphs
     padding: 4px 10px 4px 10px;
     background-color: #f7f3e1;
     transform: translateX(31px);
+    -webkit-transform: translateX(31px);
+    -moz-transform: translateX(31px);
+    transform: translateX(31px);
+    -o-transform: translateX(31px);
     max-width: 240px;
     font-size: 1.2em; }
     @media screen and (min-width: 1100px) {
       .participation p {
         margin-left: 200px; } }
   .participation p:nth-child(2) {
-    transform: rotate(5deg) translateX(40px); }
+    transform: rotate(5deg) translateX(40px);
+    -webkit-transform: rotate(5deg) translateX(40px);
+    -moz-transform: rotate(5deg) translateX(40px);
+    transform: rotate(5deg) translateX(40px);
+    -o-transform: rotate(5deg) translateX(40px); }
 
 .benefits {
   background-color: #322e2f;
@@ -642,7 +685,11 @@ main paragraphs
     border-bottom: 10px solid #c52e2f;
     padding: 10px;
     letter-spacing: .2em;
-    text-shadow: -2px 2px 0 #c52e2f, -2px -2px 0 #c52e2f, 2px 2px 0 #c52e2f, 2px -2px 0 #c52e2f; }
+    text-shadow: -2px 2px 0 #c52e2f, -2px -2px 0 #c52e2f, 2px 2px 0 #c52e2f, 2px -2px 0 #c52e2f;
+    -webkit-text-shadow: #c52e2f 2;
+    -moz-text-shadow: #c52e2f 2;
+    text-shadow: #c52e2f 2;
+    -o-text-shadow: #c52e2f 2; }
   .benefits h3::before, .benefits h3::after {
     content: "!";
     display: block;
@@ -654,7 +701,11 @@ main paragraphs
     float: left;
     height: 110px;
     width: 40px;
-    text-shadow: -8px 8px 0 #322e2f, -8px -8px 0 #322e2f, 8px 8px 0 #322e2f, 8px -8px 0 #322e2f; }
+    text-shadow: -8px 8px 0 #322e2f, -8px -8px 0 #322e2f, 8px 8px 0 #322e2f, 8px -8px 0 #322e2f;
+    -webkit-text-shadow: #322e2f 8;
+    -moz-text-shadow: #322e2f 8;
+    text-shadow: #322e2f 8;
+    -o-text-shadow: #322e2f 8; }
   .benefits h3::after {
     float: right; }
   .benefits p {
@@ -731,7 +782,11 @@ Sidebar
       border-left: 100px solid #322e2f; } }
   .sidebar h3 {
     color: #c52e2f;
-    text-shadow: -1px 1px 0 #f7f3e1, -1px -1px 0 #f7f3e1, 1px 1px 0 #f7f3e1, 1px -1px 0 #f7f3e1; }
+    text-shadow: -1px 1px 0 #f7f3e1, -1px -1px 0 #f7f3e1, 1px 1px 0 #f7f3e1, 1px -1px 0 #f7f3e1;
+    -webkit-text-shadow: #f7f3e1 1;
+    -moz-text-shadow: #f7f3e1 1;
+    text-shadow: #f7f3e1 1;
+    -o-text-shadow: #f7f3e1 1; }
   .sidebar a {
     background-color: #c52e2f;
     color: #f7f3e1; }
@@ -753,6 +808,10 @@ Sidebar
     float: left;
     width: 50%;
     transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    transform: rotate(5deg);
+    -o-transform: rotate(5deg);
     margin: 10px 0;
     padding: 0;
     text-align: center;
@@ -767,6 +826,10 @@ Sidebar
     float: right;
     width: 50%;
     transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    transform: rotate(5deg);
+    -o-transform: rotate(5deg);
     margin: 10px 0;
     padding: 0;
     text-align: center;

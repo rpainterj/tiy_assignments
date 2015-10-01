@@ -1,0 +1,24 @@
+
+@mixin blue_box{
+	display:block;
+	padding: 15px;
+	border: 2px solid $dark_blue;
+	position: relative;
+	width: 50%;
+	float:left;
+	color: $dark_blue;
+}
+
+@mixin blue_box_header{
+	font-family: "Damion";
+	font-size: 1.5em;
+	color: $dark_blue;
+	background-color: $primary_background-color; 
+	margin: 0;
+	position: absolute;
+	top: -20px;
+	padding-right: 5px;
+	display: inline;
+
+	
+}

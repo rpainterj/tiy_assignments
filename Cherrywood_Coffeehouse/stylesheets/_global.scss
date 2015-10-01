@@ -1,0 +1,33 @@
+/*   Global Styles   */
+
+* {
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color: $dark_brown;
+}
+
+a.current_page{
+	color: $purple;
+}
+
+a:hover{
+	color: $link_blue;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-weight: normal;
+}
+
+p{
+	font-size: 1em;
+	font-family: "aktiv-grotesk", sans-serif;
+
+}
+
+body{
+	width: 100%;
+	background-color: $primary_background_color;
+	padding: 0px;
+}

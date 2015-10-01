@@ -6,6 +6,8 @@ text-shadow:
 (-1px)*$size (-1px)*$size 0 $color,
 (1px)*$size (1px)*$size 0 $color,
 (1px)*$size (-1px)*$size 0 $color;
+
+@include prefixer(text-shadow, $color $size, webkit moz spec o)
 }
 
 @keyframes hand{

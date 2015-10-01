@@ -1,0 +1,172 @@
+#home_page{
+	height: 400px; 
+	background: $primary_background_color 
+	url(../images/background.png) center no-repeat;
+	position: relative;
+
+
+
+	/*add queries for smaller size to make more readable adjust background-position*/
+
+	h1:nth-child(1){
+		font-family: "Damion";
+		font-size: 4em;
+		color: $primary_background_color;
+		position:absolute;
+		top: 0;
+		left: 2%;
+
+	}
+
+	h1:nth-child(2){
+		font-family: "industry-inc-base";
+		font-size: 2.5em;
+		color: $primary_background_color;
+		position:absolute;
+		bottom: 0;
+		right: 2%;
+		margin-bottom: 0;
+
+	}
+
+}
+.home_page_content{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	overflow: auto;
+}
+
+.welcome{
+	@include blue_box;
+	width: 90%;
+	max-width: 450px;
+	margin: 0 auto;
+	float: none;
+	
+	
+
+	h3 {
+		@include blue_box_header;
+	}
+
+	p {
+		font-family: "aktiv-grotesk";
+		font-weight: 700;
+		font-size: 1em;
+	}
+
+	p:nth-child(3){
+		font-style: italic;
+
+	}
+
+
+}
+
+.upcoming{
+	@include blue_box;
+	max-width: 450px;
+	margin: 0 auto;
+	width: 90%;
+	margin-top: 30px;
+	float: none;
+
+
+	h3{
+		@include blue_box_header;
+	}
+
+	h2{
+		font-family: "aktiv-grotesk";
+		font-weight: 700;
+		font-size: 1.5em;
+		color: $dark_blue;
+		margin-top: 0;
+
+	}
+
+}
+
+.photos{
+	@include blue_box;
+	border-left: none;
+	border-right:none;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 30px;
+	max-width: 450px;
+	float: none;
+	
+
+	h3{
+		@include blue_box_header;
+		margin-left: 15px;
+	}
+
+	img{
+		max-width: 100%;
+		max-height: 100%;
+		margin-bottom: 15px;
+	}
+
+
+}
+
+.maps{
+	@include blue_box;
+	margin-top: 20px;
+	max-width: 450px;
+	border-left: none;
+	border-right:none;
+	border-bottom: none;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 30px;
+	float: none;
+
+	display: none;
+	
+
+	h3{
+		@include blue_box_header;
+		margin-left: 15px;
+
+	}
+
+	iframe{
+		width: 100%;
+
+	}
+}
+
+.phone_number{
+	
+	max-width: 450px;
+	font-size: 3em;
+	color: $primary_background_color;
+	background-color: $red;
+	
+	font-family: "industry-inc-base";
+	padding-top: 11px;
+	padding-right: 14px;
+	padding-left: 14px;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 30px;
+	float: none;
+	
+}
+
+
+
+
+
+
+
