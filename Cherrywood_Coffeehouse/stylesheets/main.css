@@ -178,6 +178,9 @@ body {
   .maps iframe {
     width: 100%; }
 
+#popup {
+  width: 450px; }
+
 .phone_number {
   max-width: 450px;
   font-size: 3em;
@@ -217,18 +220,15 @@ body {
     width: 40%;
     margin-left: 5%;
     margin-right: 5%;
-    float: right; }
+    float: right;
+    display: block; }
 
   .phone_number {
     width: 40%;
     margin-top: 15px;
     margin-right: 5%;
     margin-left: 5%;
-    float: left; }
-
-  .maps {
-    display: block;
-    float: right; } }
+    float: left; } }
 /**************
  *** Header ***
  **************/
