@@ -1,0 +1,55 @@
+.grey1{
+	width: 100px;
+	height: 100px;
+	background-color: $grey1;
+	float: left;
+	margin-left: 2em;
+	margin-top: 2em;
+}
+
+.grey2{
+	@extend .grey1;
+	background-color: $grey2;
+	
+}
+
+.grey3{
+	@extend .grey1;
+	background-color: $grey3;
+
+}
+
+.grey4{
+	@extend .grey1;
+	background-color: $grey4;
+}
+
+.black{
+	@extend .grey1;
+	background-color: $black;
+	
+}
+
+.brown1{
+	@extend .grey1;
+	background-color: $brown1;
+	
+}
+
+.brown2{
+	@extend .grey1;
+	background-color: $brown2;
+	
+}
+
+.blue1{
+	@extend .grey1;
+	background-color: $blue1;
+	
+}
+
+.blue2{
+	@extend .grey1;
+	background-color: $blue2;
+	
+}

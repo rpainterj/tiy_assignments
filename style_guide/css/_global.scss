@@ -1,0 +1,26 @@
+*{
+	box-sizing: border-box;
+	border: 1px solid red;
+}
+
+.page-wrapper{
+	margin: 1em;
+}
+
+.section{
+	margin: 5em auto;
+	clear:left;
+}
+
+h1, h2, h3, p{
+	color: $black;
+}
+
+h2{
+	border-bottom: 1px solid $grey4;
+}
+
+
+p{
+	max-width: 600px;
+}

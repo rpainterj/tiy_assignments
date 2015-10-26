@@ -1,0 +1,40 @@
+#typography{
+	div{
+		border-bottom: 1px solid $grey3;
+	}
+
+}
+
+h3{
+	font-size: 24px;
+	font-family: $primary;
+	font-weight: 400;
+	display: inline-block;
+	padding-right: 2em;
+	margin-bottom: 0;
+
+}
+
+h4{
+	font-size: 21px;
+	font-family: $secondary sans-serif;
+	font-weight: 400;
+}
+
+.body{
+	font-size: 18px;
+	line-height: 24px;
+	color: $brown2;
+}
+
+.by, .grey{
+	color: $grey4;
+}
+
+.activity{
+	font-size: 14px;
+	color: $black;
+	font-family: $secondary sans-serif;
+	line-height: 18px;
+
+}

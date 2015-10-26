@@ -1,0 +1,18 @@
+nav{
+	display: inline-block;
+	margin-left: 1em;
+
+	a{
+		display:inline-block;
+		padding-right: 2em;
+		color: $black;
+		&:hover{
+			color:$grey4;
+		}
+	}
+}
+
+.title{
+	margin-left: .5em;
+	display:inline-block;
+}

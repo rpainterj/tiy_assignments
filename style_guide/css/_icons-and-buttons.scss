@@ -1,0 +1,48 @@
+.icon{
+	height: 50px;
+	width: 50px;
+	float: left;
+	margin: 2em 2em 2em 0;
+
+}
+
+.load-more{
+	clear: left;
+}
+
+.clear{
+	clear: left;
+}
+
+.active{
+	color: $grey3;
+}
+
+.button{
+	background-color: $blue1;
+	display: inline-block;
+	overflow: auto;
+	
+	img{
+		height: 18px;
+		width: 18px;
+		margin-top: 6px;
+		margin-bottom: 6px;
+		margin-left: 4px;
+		color: $blue2;
+		display: inline-block;
+		float: left;
+
+	}
+
+	p{
+		font-size: 16px;
+		font-family: $secondary sans-serif;
+		color: $blue2;
+		clear:none;
+		display: inline-block;
+		margin: 6px 6px;
+		float: left;
+
+	}
+}
